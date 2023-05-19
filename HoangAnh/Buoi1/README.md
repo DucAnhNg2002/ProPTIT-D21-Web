@@ -90,9 +90,9 @@
         - **Định nghĩa**
             - Là những phần tử sắp xếp theo chiều đứng của phần tử cha, trình duyệt luôn tạo ra một dòng mới, rồi đến không gian dành cho phần tử này, và kết thúc là một dòng mới.
             - Mặc định phần tử dạng này, có chiều rộng chiếm hết chiều rộng phẩn tử cha, chiều cao mở rộng theo nội dung của nó.
-            - Hai phần tử block thường được dùng là `<p>` và `<div>`
+            - Hai phần tử block thường được dùng là `<p>` và ``<div>``
                 - `<p>` : Là phần tử được thiết kế để mô tả một đoạn nội dung (kiểu đoạn văn).
-                - `<div>`: Là phần tử được thiết kế để mô tả một bộ phần hoặc vùng chứa dữ liệu (có thể thay thế cho `<p>` , chứa khối cho nội dung khác)
+                - ``<div>``: Là phần tử được thiết kế để mô tả một bộ phần hoặc vùng chứa dữ liệu (có thể thay thế cho `<p>` , chứa khối cho nội dung khác)
         - **Minh họa**
             
             Ta có 3 block: block1, block2, block2.
@@ -106,14 +106,14 @@
             
         - **Các phần tử block trong HTML**
             
-            `<address>`, `<article>`, `<aside>`, `<blockquote>`, `<canvas>`, `<dd>`, `<div>`, `<dl>`, `<dt>`, `<fieldset>`, `<figcaption>`, `<figure>`, `<footer>`, `<form>`, `<h1>``<h6>`, `<header>`, `<hr>`, `<li>`, `<main>`, `<nav>``<noscript>`, `<ol>`, `<p>`, `<pre>`, `<section>`, `<table>`, `<tfoot>`, `<ul>`, `<video>`
+            `<address>`, `<article>`, `<aside>`, `<blockquote>`, `<canvas>`, `<dd>`, ``<div>``, `<dl>`, `<dt>`, `<fieldset>`, `<figcaption>`, `<figure>`, `<footer>`, `<form>`, `<h1>``<h6>`, `<header>`, `<hr>`, `<li>`, `<main>`, `<nav>``<noscript>`, `<ol>`, `<p>`, `<pre>`, `<section>`, `<table>`, `<tfoot>`, `<ul>`, `<video>`
             
     - **Phần tử HTML cấp độ inline** **(trong hàng)**
         - **Định nghĩa**
             - Là những phần tử chiếm không gian chiều ngang theo nội dung của phần tử, không tạo ra dòng mới (xuống dòng) trước và sau phần tử.
-            - Thẻ mà ta hay dùng là `<span>` :
-                - Tương tự như `<div>` nhưng được dùng trong inline.
-                - Thẻ `<span>` được thêm vào đoạn văn nhưng không làm thay đổi thuộc tính cũng như hiển thị của đoạn văn đó. Vì vậy chúng được gọi là thẻ trung tính trong HTML. Nó chỉ bị thay đổi khi chúng ta tác động bằng CSS
+            - Thẻ mà ta hay dùng là ``<span>`` :
+                - Tương tự như ``<div>`` nhưng được dùng trong inline.
+                - Thẻ ``<span>`` được thêm vào đoạn văn nhưng không làm thay đổi thuộc tính cũng như hiển thị của đoạn văn đó. Vì vậy chúng được gọi là thẻ trung tính trong HTML. Nó chỉ bị thay đổi khi chúng ta tác động bằng CSS
         - **Minh họa**
             
             Ta có 3 inline: inline1, inline2, inline 3.
@@ -124,40 +124,39 @@
             
         - **Các phần tử inline**
             
-            `<a>`, `<abbr>`, `<acronym>`, `<b>`, `<bdo>`, `<big>`, `<button>`, `<cite>`, `<code>`, `<dfn>`, `<em>`, `<i>`, `<img>`, `<input>`, `<kbd>`, `<label>`, `<map>`, `<object>`, `<output>`, `<q>`, `<samp>`, `<script>`, `<select>`, `<small>`, `<span>`, `<strong>`, `<sub>`, `<sup>`, `<textarea>`, `<time>`, `<tt>`, `<var>`
+            `<a>`, `<abbr>`, `<acronym>`, `<b>`, `<bdo>`, `<big>`, `<button>`, `<cite>`, `<code>`, `<dfn>`, `<em>`, `<i>`, `<img>`, `<input>`, `<kbd>`, `<label>`, `<map>`, `<object>`, `<output>`, `<q>`, `<samp>`, `<script>`, `<select>`, `<small>`, ``<span>``, `<strong>`, `<sub>`, `<sup>`, `<textarea>`, `<time>`, `<tt>`, `<var>`
             
-    - **Phân biệt `<div>` và `<span>`**
-        - Thẻ `<div>` dùng để gom nhóm nhiều thẻ HTML còn thẻ `<span>` dùng để gom nhóm thẻ inline HTML.
+    - **Phân biệt ``<div>`` và ``<span>``**
+        - Thẻ ``<div>`` dùng để gom nhóm nhiều thẻ HTML còn thẻ ``<span>`` dùng để gom nhóm thẻ inline HTML.
         - Nhóm thẻ block HTML thì mỗi thẻ sẽ chiếm hết một dòng
-        - Chức năng thẻ `<div>`: Phân chia hoặc gộp các thẻ, khu vực khác nhau để tiện cho việc quản lý cũng như css cho chúng.
+        - Chức năng thẻ ``<div>``: Phân chia hoặc gộp các thẻ, khu vực khác nhau để tiện cho việc quản lý cũng như css cho chúng.
         
-        | Thẻ <div> | Thẻ <span> |
+        | Thẻ ``<div>`` | Thẻ ``<span>`` |
         | --- | --- |
         | là loại phần tử cấp độ block tổng quát | là loại phần tử cấp độ inline tổng quát |
         | thẻ phân vùng dùng để tạo ra các khối (block) trên trang web | thẻ định dạng văn bản được sử dụng để đánh dấu một phần nhỏ (inline) |
-        | Nội dung bên trong thẻ <div> được hiển thị trên một dòng mới và được căn chỉnh theo chiều ngang của trang web. 
-        Thẻ div thường được sử dụng để tạo ra những phân vùng lớn, như header, footer, sidebar hoặc content. | Thẻ <span> không tạo ra một khối mới và thường được sử dụng để định dạng văn bản nhỏ hoặc để áp dụng các hiệu ứng trực tiếp lên các từ hoặc đoạn văn bản. |
+        | Nội dung bên trong thẻ `<div>` được hiển thị trên một dòng mới và được căn chỉnh theo chiều ngang của trang web. Thẻ div thường được sử dụng để tạo ra những phân vùng lớn, như header, footer, sidebar hoặc content. | Thẻ `<span>` không tạo ra một khối mới và thường được sử dụng để định dạng văn bản nhỏ hoặc để áp dụng các hiệu ứng trực tiếp lên các từ hoặc đoạn văn bản. |
         
 - **Các thẻ cơ bản**
     - **Table**
         - **Định nghĩa**
             - Thẻ `<table>` trong HTML được sử dụng để hiển thị dữ liệu ở dạng bảng *(hàng * cột)*. Có thể có nhiều cột trong một hàng.
-            - Các thẻ `<table>` trong HTML được sử dụng để quản lý việc bố cục trang web. Ví dụ: Phần tiêu đề, thanh điều hướng, nội dung trang, phần chân trang,... Nhưng bạn nên sử dụng thẻ `<div>` thay vì `<table>` để quản lý bố cục của trang.
+            - Các thẻ `<table>` trong HTML được sử dụng để quản lý việc bố cục trang web. Ví dụ: Phần tiêu đề, thanh điều hướng, nội dung trang, phần chân trang,... Nhưng bạn nên sử dụng thẻ ``<div>`` thay vì `<table>` để quản lý bố cục của trang.
         - ****Các thẻ định nghĩa bảng trong HTML****
             
             
             | Thẻ | Mô tả |
             | --- | --- |
-            | <table> | Định nghĩa bảng. |
-            | <tr> | Định nghĩa một hàng trong một bảng. |
-            | <th> | Định nghĩa phần header (dòng đầu tiên) của bảng. |
-            | <td> | Định nghĩa 1 ô của bảng. |
-            | <caption> | Định nghĩa phụ đề bảng. |
-            | <colgroup> | Chỉ định một nhóm của một hoặc nhiều cột trong một bảng để định dạng. |
-            | <col> | Được sử dụng với thẻ <colgroup> để chỉ định thuộc tính cột cho mỗi cột. |
-            | <tbody> | Được sử dụng để nhóm nội dung body trong một bảng. |
-            | <thead> | Được sử dụng để nhóm nội dung header trong một bảng. |
-            | <tfooter> | Được sử dụng để nhóm nội dung footer trong một bảng. |
+            | `<table>` | Định nghĩa bảng. |
+            | `<tr>` | Định nghĩa một hàng trong một bảng. |
+            | `<th>` | Định nghĩa phần header (dòng đầu tiên) của bảng. |
+            | `<td>` | Định nghĩa 1 ô của bảng. |
+            | `<caption`> | Định nghĩa phụ đề bảng. |
+            | `<colgroup>` | Chỉ định một nhóm của một hoặc nhiều cột trong một bảng để định dạng. |
+            | `<col>` | Được sử dụng với thẻ `<colgroup>` để chỉ định thuộc tính cột cho mỗi cột. |
+            | `<tbody>` | Được sử dụng để nhóm nội dung body trong một bảng. |
+            | `<thead>` | Được sử dụng để nhóm nội dung header trong một bảng. |
+            | `<tfooter>` | Được sử dụng để nhóm nội dung footer trong một bảng. |
             - `<tr>` có thể 1 hoặc nhiều thẻ `<th>` hoặc `<td>`
         - **Minh họa**
             
@@ -197,10 +196,9 @@
                 ![Untitled](mockup/Untitled%205.png)
                 
             - **Các thuộc tính khác**
-                
-                
-                | border | Xác định độ dày của đường viền bao xung quanh tấm hình |
+                | Thuộc tính | Chú thích |
                 | --- | --- |
+                | border | Xác định độ dày của đường viền bao xung quanh tấm hình |
                 | width | Thiết lập chiều rộng cho tấm hình |
                 | height | Thiết lập chiều cao cho tấm hình |
                 | vspace | Xác định khoảng cách lề phía trên và lề phía dưới của tấm hình |
@@ -245,12 +243,13 @@
                     - ***Lưu ý**:* Ta không cần phải xác định phần đuôi của tập tin vì hệ thống sẽ tự động làm việc đó.
                 - **`target`:** Xác định nơi mà tài liệu sẽ được mở
                     - Thuộc tính target có bốn giá trị cơ bản
-                    
-                    | _blank | Mở tài liệu trong một tab mới | https://webcoban.vn/html/demo?file=2246 |
+
+                    | Thuộc tính | Chú thích | Ví dụ |
                     | --- | --- | --- |
-                    | _self | Mở tài liệu trong khung hiện tại | https://webcoban.vn/html/demo?file=2247 |
-                    | _parent | Mở tài liệu trong khung cha của khung hiện tại | https://webcoban.vn/html/demo?file=2248 |
-                    | _top | Mở tài liệu trong tab hiện tại | https://webcoban.vn/html/demo?file=2249 |
+                    | _blank | Mở tài liệu trong một tab mới | [Xem ví dụ](https://webcoban.vn/html/demo?file=2246)|
+                    | _self | Mở tài liệu trong khung hiện tại | [Xem ví dụ](https://webcoban.vn/html/demo?file=2247) |
+                    | _parent | Mở tài liệu trong khung cha của khung hiện tại | [Xem ví dụ](https://webcoban.vn/html/demo?file=2248) |
+                    | _top | Mở tài liệu trong tab hiện tại | [Xem ví dụ](https://webcoban.vn/html/demo?file=2249) |
                     
             - **Các thuộc tính khác**
                 
@@ -264,7 +263,7 @@
                 | rel | Dùng để chỉ định mối quan hệ giữa tài liệu hiện tại và tài liệu được liên kết. |
                 | type | Dùng để chỉ định loại phương tiện của tài liệu được liên kết. |
     - **Section elements**
-        - **Phần tử `<div>` và `<span>`**
+        - **Phần tử ``<div>`` và ``<span>``**
             
             *(Đã tìm hiểu ở trên)*
             
@@ -497,7 +496,7 @@
         - **Thẻ `<label>`**
             - Thẻ `<label>` có tác dụng đặt nhãn để mô tả cho thẻ `<input>`. Thực chất thẻ `<label>` không hiển thị bất cứ thứ gì đặc biệt cho người dùng. Tuy nhiên, khi click vào nội dung bên trong thẻ `<label>`, con trỏ chuột sẽ tự động nhảy vào phần tử mà thẻ `<label>` đó đại diện.
             - ***Lưu ý:*** Thuộc tính `for` của thẻ `<label>` phải giống với với `id` của thẻ `<input>` mà nó đại diện.
-            - Bạn có thể sử dụng thẻ `<span>`, thẻ `<p>`, hay một thẻ bất kì để bao quanh thẻ `<label>` lại.
+            - Bạn có thể sử dụng thẻ ``<span>``, thẻ `<p>`, hay một thẻ bất kì để bao quanh thẻ `<label>` lại.
         - **Thẻ `<textarea>`**
             - Thẻ `<textarea>` sẽ tạo một vùng nhập liệu bao gồm nhiều dòng.
             - Vùng dữ liêu sẽ có số kí tự không hạn chế, do đó thẻ `<textarea>` được sử dụng trong những trường hợp muốn nhập nhiều dữ liệu. Các kí tự sẽ được biểu diễn băng font chữ nhất định( *thường là Courier*).
@@ -507,19 +506,18 @@
                 
                 | Thuộc tính | Giá trị | Ví dụ | Mô tả |
                 | --- | --- | --- | --- |
-                | cols | Số | cols="20" | Xác định chiều rộng hiển thị của <textarea>. |
-                | rows | Số | rows="20" | Xác định số hàng hiển thị của <textarea>. |
-                | autofocus | autofocus | autofocus="autofocus" | Xác định một trường <textarea> được "focus" khi tải trang. |
-                | dirname | Tên trường | dirname="fieldName" | Xác định tên của một trường nhập có chứa các hướng văn bản của các vùng <textarea>. |
-                | form | Tên form | form="formName" | Xác định trường <textarea> thuộc về form nào. |
-                | maxlength | Số | maxlength="200" | Xác định số ký tự lớn nhất cho phép trong <textarea>. |
+                | cols | Số | cols="20" | Xác định chiều rộng hiển thị của `<textarea>`. |
+                | rows | Số | rows="20" | Xác định số hàng hiển thị của `<textarea>`. |
+                | autofocus | autofocus | autofocus="autofocus" | Xác định một trường `<textarea>` được "focus" khi tải trang. |
+                | dirname | Tên trường | dirname="fieldName" | Xác định tên của một trường nhập có chứa các hướng văn bản của các vùng `<textarea>`. |
+                | form | Tên form | form="formName" | Xác định trường `<textarea>` thuộc về form nào. |
+                | maxlength | Số | maxlength="200" | Xác định số ký tự lớn nhất cho phép trong `<textarea>`. |
                 | placeholder | text | placeholder="Chỉ chấp nhận số và chữ." | Xác định một gợi ý cho người dùng nhâp liệu. |
-                | required | required | required="required" | Xác định giá trị bắt buộc của trường <textarea>. |
-                | wrap | hard
-                soft | wrap="soft" | Xác định vùng văn bản được gói bằng cách nào. |
-                | disabled | disabled | disabled="disabled" | Xác định vùng <textarea> không hiển thị. |
-                | name | tên của textarea | name="texName" | Xác định tên của <textarea>. |
-                | readonly | readonly | readonly="readonly" | Xác định vùng <textarea> chỉ được đọc. |
+                | required | required | required="required" | Xác định giá trị bắt buộc của trường `<textarea>`. |
+                | wrap | hard/soft | wrap="soft" | Xác định vùng văn bản được gói bằng cách nào. |
+                | disabled | disabled | disabled="disabled" | Xác định vùng `<textarea>` không hiển thị. |
+                | name | tên của textarea | name="texName" | Xác định tên của `<textarea>`. |
+                | readonly | readonly | readonly="readonly" | Xác định vùng `<textarea>` chỉ được đọc. |
         - Thẻ `<select>`
         - Thẻ `<option>`
         - Thẻ `<optgroup>`
