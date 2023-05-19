@@ -91,7 +91,7 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
             từ khóa
             
         - Mỗi thẻ sẽ có một chức năng riêng, ví dụ:
-            - Thẻ <p> dùng để tạo một đoạn văn bản.
+            - Thẻ `<p>` dùng để tạo một đoạn văn bản.
             - Thẻ <a> dùng để tạo một cái liên kết.
             - Thẻ <img> dùng để chèn một tấm hình vào trang web.
             - . . . .
@@ -135,12 +135,12 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
     		<meta charset="utf-8">
     	</head>
     	<body>
-    		<p>1) Tài liệu học HTML</p>
-    		<p>. . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-    		<p>2) Tài liệu học CSS</p>
-    		<p>. . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-    		<p>3) Tài liệu học JavaScript</p>
-    		<p>. . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+    		`<p>`1) Tài liệu học HTML</p>
+    		`<p>`. . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+    		`<p>`2) Tài liệu học CSS</p>
+    		`<p>`. . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+    		`<p>`3) Tài liệu học JavaScript</p>
+    		`<p>`. . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
     	</body>
     </html>
     ```
@@ -197,10 +197,10 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
     	<meta charset="utf-8">
     </head>
     <body>
-    	<u>Phần tử khối là gì !?</u>
+    	`<u>`Phần tử khối là gì !?`</u>`
     	<i>Phần tử nội tuyến là gì !?</i>
-    	<p>Điểm khác nhau giữa phần tử khối và phần tử nội tuyến</p>
-    	<s>block element & inline element</s>
+    	`<p>`Điểm khác nhau giữa phần tử khối và phần tử nội tuyến</p>
+    	`<s>`block element & inline element</s>
     	<h3>Cách tạo một cái phần tử khối trong HTML</h3>
     </body>
     </html>
@@ -212,7 +212,7 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
     
     ![Untitled](Image/Untitled%2014.png)
     
-    Sau khi xem xong phần minh họa phía trên thì chúng ta thấy hai phần tử <p> và <h3> đều được bắt đầu trên một hàng mới, chiều rộng của chúng chiếm toàn bộ chiều rộng phần nội dung của phần tử cha của chúng. Cho nên, hai phần tử này chính là `phần tử khối`.
+    Sau khi xem xong phần minh họa phía trên thì chúng ta thấy hai phần tử `<p>` và <h3> đều được bắt đầu trên một hàng mới, chiều rộng của chúng chiếm toàn bộ chiều rộng phần nội dung của phần tử cha của chúng. Cho nên, hai phần tử này chính là `phần tử khối`.
     
 2. Phần tử nội tuyến là gì?
     - Phần tử nội tuyến là loại phần tử mà khi hiển thị lên màn hình thì nó sẽ có các đặc điểm như sau:
@@ -227,7 +227,7 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
     	<meta charset="utf-8">
     </head>
     <body>
-    	<p>Điểm khác <b>giữa</b> <s>phần tử khối</s> và <u>phần tử nội tuyến</u></p>
+    	`<p>`Điểm khác `<b>`giữa</b> `<s>`phần tử khối</s> và `<u>`phần tử nội tuyến`</u>`</p>
     	<i>Phần tử khối là gì !?</i>
     	<h3>Cách tạo một cái phần tử khối trong HTML</h3>
     </body>
@@ -238,7 +238,7 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
     
     ![Untitled](Image/Untitled%2016.png)
     
-    - Sau khi xem xong phần minh họa phía trên thì chúng ta thấy ba phần tử <b>, <s>, <u> đều hiển thị tiếp nối trên hàng hiện tại, chiều rộng của chúng phụ thuộc vào kích cỡ của các nội dung nằm ở bên trong chúng. Cho nên, ba phần tử này chính là phần tử nội tuyến.
+    - Sau khi xem xong phần minh họa phía trên thì chúng ta thấy ba phần tử `<b>`, `<s>`, `<u>` đều hiển thị tiếp nối trên hàng hiện tại, chiều rộng của chúng phụ thuộc vào kích cỡ của các nội dung nằm ở bên trong chúng. Cho nên, ba phần tử này chính là phần tử nội tuyến.
     - : Phần tử <i> cũng là một phần tử nội tuyến, nguyên nhân mà nó không được hiển thị tiếp nối trên hàng hiện tại là bởi vì phần tử anh của nó là một phần tử khối.
         
         Phần tử h3 là một phần tử khối nên nó sẽ ko viết tiếp sau phần tử nội tuyến, và nó sẽ bắt đầu dòng mới luôn
@@ -259,24 +259,24 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
         </head>
         <body>
         	<div>
-        		<u>Cách sử dụng phần tử div</u>
+        		`<u>`Cách sử dụng phần tử div`</u>`
         		<i>Cách sử dụng phần tử span</i>
-        		<p>Điểm khác giữa phần tử div và phần tử span</p>
+        		`<p>`Điểm khác giữa phần tử div và phần tử span</p>
         		<h3>Tìm hiểu chức năng của phần tử div và phần tử span</h3>
         	</div>
         </body>
         </html>
         ```
         
-        Đặt bốn phần tử <u>, <i>, <p>, <h3> nằm bên trong phần tử <div>
+        Đặt bốn phần tử `<u>`, <i>, `<p>`, <h3> nằm bên trong phần tử <div>
         
-        Trong đó <u>, <i> là 2 phần tử nội tuyến
+        Trong đó `<u>`, <i> là 2 phần tử nội tuyến
         
-        còn <p> và <h3> là 2 phần tử khối
+        còn `<p>` và <h3> là 2 phần tử khối
         
         ![Untitled](Image/Untitled%2017.png)
         
-        việc chúng ta có đặt bốn phần tử <u>, <i>, <p>, <h3> bên trong phần tử <div> hay không thì cũng không ảnh hưởng gì đến bốn phần tử này, bởi vì mặc định phần tử <div> không có bất kỳ một định dạng nào cả.
+        việc chúng ta có đặt bốn phần tử `<u>`, <i>, `<p>`, <h3> bên trong phần tử <div> hay không thì cũng không ảnh hưởng gì đến bốn phần tử này, bởi vì mặc định phần tử <div> không có bất kỳ một định dạng nào cả.
         
         Tuy nhiên chúng ta cần đặt trong phần tử <div> để: 
         
@@ -290,10 +290,10 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
             	<meta charset="utf-8">
             </head>
             <body>
-            	<u>Phần tử div trong HTML</u>
+            	`<u>`Phần tử div trong HTML`</u>`
             	<i>Phần tử span trong HTML</i>
-            	<p>Cách sử dụng phần tử div để thiết kế bố cục trang web</p>
-            	<s>Nhóm các phần tử vào bên trong phần tử div</s>
+            	`<p>`Cách sử dụng phần tử div để thiết kế bố cục trang web</p>
+            	`<s>`Nhóm các phần tử vào bên trong phần tử div</s>
             </body>
             </html>
             ```
@@ -309,10 +309,10 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
             </head>
             <body>
             	<div style="font-size:30px">
-            		<u>Phần tử div</u>
+            		`<u>`Phần tử div`</u>`
             		<i>Phần tử span</i>
-            		<p>Sử dụng phần tử div để thiết kế bố cục trang web</p>
-            		<s>Nhóm các phần tử vào bên trong phần tử div</s>
+            		`<p>`Sử dụng phần tử div để thiết kế bố cục trang web</p>
+            		`<s>`Nhóm các phần tử vào bên trong phần tử div</s>
             	</div>
             </body>
             </html>
@@ -336,11 +336,11 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
             <body>
             	<div id="header">
             		<h2>WEB CƠ BẢN</h2>
-            		<p>(TRANG CHIA SẺ TÀI LIỆU HỌC LẬP TRÌNH WEB MIỄN PHÍ)</p>
+            		`<p>`(TRANG CHIA SẺ TÀI LIỆU HỌC LẬP TRÌNH WEB MIỄN PHÍ)</p>
             	</div>
             	<div id="content">
-            		<h3><u>BÀI HƯỚNG DẪN SỐ 2</u></h3>
-            		<p>. . . . . . . . . . . . . . . . . . .</p>
+            		<h3>`<u>`BÀI HƯỚNG DẪN SỐ 2`</u>`</h3>
+            		`<p>`. . . . . . . . . . . . . . . . . . .</p>
             	</div>
             	<div id="footer">Thông tin bản quyền</div>
             </body>
@@ -361,8 +361,8 @@ và client thì ko phải lúc nào cùng duy trì connect với mấy chủ, c�
         	<meta charset="utf-8">
         </head>
         <body>
-        	<p>- Tài liệu <span style="font-size:30px">học</span> HTML</p>
-        	<p>- Từ <span style="color:red">cơ bản</span> đến nâng cao</p>
+        	`<p>`- Tài liệu <span style="font-size:30px">học</span> HTML</p>
+        	`<p>`- Từ <span style="color:red">cơ bản</span> đến nâng cao</p>
         </body>
         </html>
         ```
@@ -685,7 +685,7 @@ Dưới đây là danh sách một số thuộc tính thường được áp d�
     
 - Thẻ p
     
-    Để tạo được một đoạn văn bản thì chúng ta cần phải sử dụng thẻ <p>
+    Để tạo được một đoạn văn bản thì chúng ta cần phải sử dụng thẻ `<p>`
     
 - Danh sách <list>
     
@@ -774,7 +774,7 @@ Dưới đây là danh sách một số thuộc tính thường được áp d�
     
     Thẻ <button> xác định nút có thể nhấp được.
     
-    Bên trong phần tử <button>, bạn có thể đặt văn bản (và các thẻ như <i>, <b>, <strong>, <br>, <img>, v.v.). Điều đó là không thể với một nút được tạo bằng phần tử <input>!
+    Bên trong phần tử <button>, bạn có thể đặt văn bản (và các thẻ như <i>, `<b>`, <strong>, <br>, <img>, v.v.). Điều đó là không thể với một nút được tạo bằng phần tử <input>!
     
     Mẹo: Luôn chỉ định thuộc tính loại cho phần tử <button> để cho trình duyệt biết đó là loại nút nào.
     
