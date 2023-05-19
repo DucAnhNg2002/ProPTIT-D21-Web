@@ -380,7 +380,6 @@
                   </article>
                 </main>
                 ```
-                
                 ![Untitled](mockup/Untitled%2010.png)
                 
     - **Text content**
