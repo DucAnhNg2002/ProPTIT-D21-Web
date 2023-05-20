@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1
+        style="width: 100vw; text-align: center; color: #205cac; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-size: 50px;">
+        THÔNG TIN</h1>
+    <br>
+    <table border="2px solid black" style="border-collapse: collapse; margin:auto;">
+        <thead>
+            <tr style="background-color: #6495ed">
+                <th style="padding: 10px;">Username</th>
+                <th style="padding: 10px;">Password</th>
+                <th style="padding: 10px;">Ngày sinh</th>
+                <th style="padding: 10px;">Giới tính</th>
+                <th style="padding: 10px;">Sở thích</th>
+                <th style="padding: 10px;">Quê quán</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+            
+        </tbody>
+    </table>
+    <br>
+    Ảnh:
+    <br>
+    <img src="assets/ProPTIT.png" alt="ProPTIT" width="25%" height="25%">
+    <br>
+    <br>
+    <a href="javascript:history.back()">Quay lại</a>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var username = urlParams.get("Username");
+        var password = urlParams.get("Password");
+        var ngaysinh = urlParams.get("Date");
+        var gioitinh = urlParams.get("Gioitinh");
+        var sothich = urlParams.getAll("Sothich");
+        var quequan = urlParams.get("select");
+
+        // Điền thông tin vào bảng
+
+        // Sử dụng JavaScript
+        // document.getElementById("username").innerHTML = username;
+        // document.getElementById("password").innerHTML = password;
+        // document.getElementById("ngaysinh").innerHTML = ngaysinh;
+        // document.getElementById("gioitinh").innerHTML = gioitinh;
+
+        // var st = "";
+        // for (var i = 0; i < sothich.length; i++) {
+        //     st += (i + 1).toString() + ". " + sothich[i] + "\n";
+        // }
+        // document.getElementById("sothich").innerText = st;
+        // document.getElementById("quequan").innerText = quequan;
+
+        // Sử dụng HTML
+        var st = "";
+        for (var i = 0; i < sothich.length; i++) {
+            st += (i + 1).toString() + ". " + sothich[i] + <br />;
+        }
+        document.getElementById("table").innerHTML = "<tr><td>" + username + "</td><td>" + password + "</td><td>" + ngaysinh + "</td><td>" + gioitinh + "</td><td>" + st + "</td><td>" + quequan + "</td></tr>";
+    </script>
+</body>
+
+</html>
