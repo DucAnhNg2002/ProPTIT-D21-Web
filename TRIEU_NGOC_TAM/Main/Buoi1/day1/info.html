@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            width: 100vw;
+            text-align: center;
+            margin: 40px auto;
+            color: blue;
+            font-size: 50px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        table{
+           margin: 0 auto; 
+           border-collapse: collapse;
+           border: 1px solid black;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        thead {
+            background-color: cornflowerblue;
+        }
+
+        tbody {
+            background-color: rgb(231, 235, 242);
+        }
+    </style>
+</head>
+<body>
+    <h1>Thông tin</h1>
+    <table border="1px solid">
+        <thead>
+            <td>Username</td>
+            <td>Password</td>
+            <td>Ngày sinh</td>
+            <td>Giới tính</td>
+            <td>Sở thích</td>
+            <td>Quê quán</td>
+        </thead>
+        <tbody id = "table">        
+        </tbody>
+    </table>
+    <script>
+        var username = new URLSearchParams(window.location.search).get('username');
+        var password = new URLSearchParams(window.location.search).get('password');
+        var ngaysinh = new URLSearchParams(window.location.search).get('dob');
+        var sex = new URLSearchParams(window.location.search).get('sex');
+        var sothich = new URLSearchParams(window.location.search).getAll('sothich');
+        var address = new URLSearchParams(window.location.search).get('address');
+        var st = "";
+        for (var i = 0; i < sothich.length; i++) {
+            st += (i+1).toString() + ". " + sothich[i] + "<br/>";
+        }
+        document.getElementById("table").innerHTML = "<tr><td>" + username + "</td><td>" + password + "</td><td>" + ngaysinh + "</td><td>" + sex + "</td><td>" + st + "</td><td>" + address + "</td></tr>";
+    </script>
+    <br>
+    <div>Ảnh:</div>
+    <img src="./proptit.png" alt="proptit" width="300px" height="300px"><br>
+    <a href = "index.html"><button>Quay lại</button></a>
+</body>
+</html>
