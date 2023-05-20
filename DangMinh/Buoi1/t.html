@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submitted Data</title>
+  <script>
+    // Retrieve and display the submitted data
+    function displaySubmittedData() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const username = urlParams.get('username_input');
+      const password = urlParams.get('password_input');
+      const dateOfBirth = urlParams.get('date_input');
+      const hobbies = urlParams.getAll('so_thich');
+      const gender = urlParams.get('gt');
+      const hometown = urlParams.get('que_quan');
+      
+      // Display the data in HTML elements
+      document.getElementById('username').textContent = `Username: ${username}`;
+      document.getElementById('password').textContent = `Password: ${password}`;
+      document.getElementById('dateOfBirth').textContent = `Ngày sinh: ${dateOfBirth}`;
+      document.getElementById('hobbies').textContent = `Sở thích: ${hobbies.join(', ')}`;
+      document.getElementById('gender').textContent = `Giới tính: ${gender}`;
+      document.getElementById('hometown').textContent = `Quê quán: ${hometown}`;
+
+    }
+  </script>
+</head>
+<body onload="displaySubmittedData()">
+    <h1>Thông tin</h1>
+    <table id="infor_table" border="1px">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Date of birth</th>
+                <th>Gender</th>
+                <th>Hobbies</th>
+                <th>Hometown</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="username"></th>
+                <th id="password"></th>
+                <th id="dateOfBirth"></th>
+                <th id="hobbies"></th>
+                <th id="gender"></th>
+                <th id="hometown"></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="./index.html">Quay lại</a>
+
+
+</body>
+</html>
