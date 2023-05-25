@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    margin-top: 100px;
+    margin-left: 600px;
+}
+.sub_nav {
+    
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 200px;
+}
+.btn_login {
+    background-color:aqua;
+    border: 2px solid #000;
+    padding: 7px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+/* INFOR */
+h3 {
+    color: #2968E6;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 670px;
+}
+table {
+    background-color: aqua;
+    margin-top: 50px;
+    margin-left: 500px;
+    border-collapse: collapse;
+  }
+thead {
+    background-color: aquamarine;
+}
+tbody {
+    height: 100px;
+}
+  td, th {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+img{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 350px;
+    height: 350px;
+}
