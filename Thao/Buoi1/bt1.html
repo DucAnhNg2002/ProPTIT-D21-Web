@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Luu Phuong Thao</title>
         <meta charset="utf-8">
     </head>
+
     <body>
+        <form method="GET" action="./ThongTin.html">
         <h1>ProPTIT Web D21</h1>
-        Username: <input type="text">
-        <br>
-        <br>
-        Password: <input type="text">
-        <br>
-        <br>
+        <label for="name"> Username: </label>
+        <input type="text" id="name" placeholder="Username" required>
+        <br><br>
+        <label for="pass"> Password: </label>
+        <input type="text" id="pass" placeholder="Password" required>
+       <br><br>
         Ngày sinh <input type="date">
-        <br>
-        <br>
+        <br><br>
         Sở thích:
         <br>
+        <input type="checkbox" id="st1">
+        <label for="st1"> Sở thích 1 </label>
         <br>
-        <input type="checkbox"> Sở thích 1
+        <input type="checkbox" id="st2">
+        <label for="st2"> Sở thích 2 </label>
         <br>
-        <input type="checkbox"> Sở thích 2
-        <br>
-        <input type="checkbox"> Sở thích 3
+        <input type="checkbox" id="st3">
+        <label for="st3"> Sở thích 3 </label>
         <br><br>
         Giới tính:
         <br>
-        <input type="radio" name="nam"> Nam
+        <input type="radio" name="nam" id="nam">
+        <label for="nam"> Nam</label>
         <br>
-        <input type="radio" name="nam"> Nữ
+        <input type="radio" name="nam" id="nu">
+        <label for="nu"> Nữ</label>
         <br>
-        <input type="radio" name="nam"> Không biết
+        <input type="radio" name="nam" id="kb">
+        <label for="kb"> Không biết</label>
         <br><br>
         Quê quán:
+        <select name="" id="">
+            <option value="">Quê quán 1</option>
+            <option value="">Quên quán 2</option>
+            <option value="">Quên quán 3</option>
+        </select>
         <br><br>
         <button name="Submit" type="submit"> Submit</button>
+        </form>
         <br><br>
         // Bấm vào các lable thì phải select tới input hiện tại
         <br><br>
@@ -47,18 +59,10 @@
         <br><br>
         <a href="https://proptit.com/">Welcome to ProPTIT</a>
         <br><br>
-        <li>
-            List1
-        </li>
-        <li>
-            List2
-        </li>
-        <li>
-            List3
-        </li>
-        <li>
-            List4
-        </li>
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
         <br>
         <table>
             <thead>
