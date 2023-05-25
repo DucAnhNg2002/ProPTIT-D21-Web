@@ -102,8 +102,79 @@ Trong file ***HTML***
 ```
 * **Sử dụng thư viện CSS bên ngoài** 
 -----
-### 2. CSS selector
+### 2. CSS SELECTOR
 CSS selector là một phần của ngôn ngữ CSS được sử dụng để xác định các phần tử HTML mà bạn muốn áp dụng kiểu (style) cho chúng. CSS selector cho phép bạn chọn các phần tử cụ thể hoặc nhóm phần tử dựa trên các thuộc tính, lớp, ID, cấu trúc và quan hệ giữa chúng.
+- **Element selector** : Chọn tất cả các phần tử cùng loại
+> VD: Đoạn mã trên áp dụng màu xanh (color: blue) cho tất cả các phần tử \<p> trên trang.
+``` html
+p {
+  color: blue;
+}
+```
+- **Class selector** : Chọn các phần tử có giá trị cùng lớp
+>VD: Đoạn mã trên áp dụng màu nền vàng (background-color: yellow) cho tất cả các phần tử có lớp "highlight".
+``` html
+.highlight {
+  background-color: yellow;
+}
+```
+- **ID selector** : Chọn một phần tử duy nhất dựa trên giá trị ID
+>VD: Đoạn mã trên áp dụng kích thước font chữ 24px cho phần tử có ID "header".
+``` html
+#header {
+  font-size: 24px;
+}
+```
+- **Selector phần tử con (Descendant selector)**: Chọn các phần tử con của một phần tử khác
+> VD: Đoạn mã trên áp dụng margin 10px cho tất cả các phần tử <p> nằm trong phần tử có lớp "container".
+``` html
+.container p {
+  margin: 10px;
+}
+
+```
+- **Selector theo thuộc tính (Attribute selector)**: Chọn các phần tử dựa trên giá trị thuộc tính
+> VD: Đoạn mã trên áp dụng đường viền 1px màu xám cho tất cả các phần tử \<input> có thuộc tính type="text".
+``` html
+input[type="text"] {
+  border: 1px solid gray;
+}
+
+```
+![example](https://i.imgur.com/2ZIPkst.png)
+*****
+### 3. ĐỘ ƯU TIÊN, CÁC LOẠI ĐƠN VỊ ĐỘ DÀI TRONG CSS
+#### CSS Specificity
+- Specificity Hierarchy
+![example](https://i.imgur.com/FVdVonK.png)
+- Giữa Internal và External ko có sự ưu tiên, phụ thuộc vào cái nào đc gọi sau
+- Calculate Specificity
+    - Inline 1000
+    - #id 100
+    - .class 10
+    - tag 1
+``` html
+A: h1
+B: h1#content
+C: <h1 id="content" style="color: pink;">Heading</h1>
+```
+>The specificity of A is 1 (one element selector)
+The specificity of B is 101 (one ID reference + one element selector)
+The specificity of C is 1000 (inline styling)
+- Equal specificity
+If the same rule is written twice into the external style sheet, then the latest rule wins:
+``` html
+h1 {background-color: yellow;}
+h1 {background-color: red;}
+```
+> There is one exception to this rule: if you use the **!important** rule, it will even override inline styles!
+#### Các loại đơn vị độ dài
+
+
+
+
+
+
 
 
 
