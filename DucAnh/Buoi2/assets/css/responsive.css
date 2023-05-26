@@ -1,0 +1,77 @@
+/* Mobile */
+
+@media all and (max-width: 739px) {
+    .s-full-width {
+        width: 100% !important;
+    }
+    .s-col-full {
+        width: 100% !important;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+        width: 100%;
+    }
+    #nav > li > a {
+        display: block;
+    }
+    #slider .text-slider {
+        display: none;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #header .mobile-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0px 21px;
+        display: inline-block;
+        color: #ccc;
+        font-size: 20px;
+        line-height: 46px;
+    }
+    #header .mobile-menu:hover {
+        background-color: #ccc !important;
+        color: black;
+    }
+    .member-mobile {
+        width: 100% !important;
+    }
+    #content .about .member-list .member-item img {
+        width: 60%;
+    }
+    #contact .input {
+        width: 100%;
+        padding: 0px 8px;
+    }
+    #contact button {
+        margin: 16px 8px !important;
+    }
+    #tour button {
+        width: 100%;
+    }
+    #footer .social a {
+        font-size: 30px;
+        margin: 0px 8px;
+    }
+}
+
+
+/* Ipad */
+@media all and (max-width: 1023px) and (min-width: 740px) {
+    #footer .social a {
+        font-size: 50px;
+        margin: 0px 8px;
+    }
+}
+
+/* Ipad && Mobile */ 
+@media all and (max-width: 1023px) {
+   
+}
