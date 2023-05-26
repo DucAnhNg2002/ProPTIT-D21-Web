@@ -1,0 +1,31 @@
+.header {
+    width: 80%;
+}
+.header__wrap {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: .5rem 1rem;
+    border-radius: .75rem;
+}
+.header__logo {
+    width: 5rem;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    
+}
+.header__nav__detail {
+    margin: 0 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.5rem .5rem;
+}
+.header__nav__detail:hover {
+    cursor: pointer;
+    color: black;
+    background-color: gray;
+}
