@@ -688,7 +688,7 @@ p::first-line {
 }
 ```
 
-![first-line](./img/first-line.png)
+![first-line](./img/first-line_pc.png)
 
 **Chú ý:** `::first-line` chỉ có thể được sử dụng với phần tử `block-level` (như `<p>`).
 
@@ -816,5 +816,7 @@ div {
 ### 2. Text alignment
 
 Thuộc tính `text-align` xác định căn chỉnh văn bản của phần tử.
+
+
 
 

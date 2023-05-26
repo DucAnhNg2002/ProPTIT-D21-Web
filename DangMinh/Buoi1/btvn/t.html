@@ -14,12 +14,12 @@
       const hometown = urlParams.get('que_quan');
       
       // Display the data in HTML elements
-      document.getElementById('username').textContent = `Username: ${username}`;
-      document.getElementById('password').textContent = `Password: ${password}`;
-      document.getElementById('dateOfBirth').textContent = `Ngày sinh: ${dateOfBirth}`;
-      document.getElementById('hobbies').textContent = `Sở thích: ${hobbies.join(', ')}`;
-      document.getElementById('gender').textContent = `Giới tính: ${gender}`;
-      document.getElementById('hometown').textContent = `Quê quán: ${hometown}`;
+      document.getElementById('username').textContent = username;
+      document.getElementById('password').textContent = password;
+      document.getElementById('dateOfBirth').textContent =  dateOfBirth;
+      document.getElementById('hobbies').textContent = hobbies.join(', ');
+      document.getElementById('gender').textContent = gender;
+      document.getElementById('hometown').textContent =hometown
 
     }
   </script>
