@@ -1,11 +1,13 @@
-.header {
-    width: 80%;
+header {
+    display: flex;
+    justify-content: center;
 }
 .header__wrap {
-    margin-top: 2rem;
+    width: 70%;
+    margin-top: .5rem;
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: gray;
     padding: .5rem 1rem;
     border-radius: .75rem;
 }
@@ -27,5 +29,4 @@
 .header__nav__detail:hover {
     cursor: pointer;
     color: black;
-    background-color: gray;
 }
