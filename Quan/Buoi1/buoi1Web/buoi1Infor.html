@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>User Data</h2>
+    <table border="1px solid" id = "user table">
+        <thead>
+            <th>Username</th>
+            <th>Password</th>
+            <th>DOB</th>
+            <th>SoThich</th>
+            <th>GioiTinh</th>
+            <th>QueQuan</th>
+        </thead>
+        <tbody id = "user table"></tbody>
+    </table>
+    <script>
+        // const userData = JSON.parse(localStorage.getItem('dataJson'));
+        // const tableBody = document.querySelector('#user table tbody');
+        // userData.forEach((user, index) => {
+        //     const row = document.createElement('tr');
+        //     row.innerHTML = `
+        //         <td>${user.Username}</td>
+        //         <td>${user.Password}</td>
+        //         <td>${user.Dob}</td>
+        //         // <td>${user.Sothich}</td>
+        //         <td>${user.GioiTinh}</td>
+        //         <td>${user.QueQuan}</td>
+        //     `;
+        //     tableBody.appendChild(row);
+        // })
+        
+        var url = new URL(window.location);
+        var username = url.searchParams.get("Username");
+        var password = url.searchParams.get("Password");
+        var dob = url.searchParams.get("DOB");
+        var sothich = url.searchParams.getAll("SoThich");
+        var gioitinh = url.searchParams.get("GioiTinh");
+        var quequan = url.searchParams.get("QueQuan");
+        
+        var st = "";
+        for (var i = 0; i < sothich.length; i++) {
+            st += (i+1).toString + "." +  sothich[i] + "<br/>";
+        }
+        document.getElementById("user table").innerHTML += "<tr><td>" + username + "</td><td>" + password + "</td><td>" + dob + "</td><td>" + st + "</td><td>" + gioitinh + "</td><td>" + quequan + "</td></tr>";
+
+    </script>
+</body>
+</html>

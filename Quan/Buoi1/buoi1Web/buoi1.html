@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> ProPTIT Web D21</h1>
+    <form method="get" action="./buoi1Infor.html" target="_blank" onsubmit="return validateForm()">
+        <div>
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username">
+        </div>
+        <br>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password">
+        </div>
+        <br>
+        <div>
+            <label for="DOB">DOB</label>
+            <input type="date" name="DOB" id="DOB">
+        </div>
+        <br>
+        <div>
+            <label for="SoThich">SoThich</label>
+            <br>
+            <input type="checkbox" name="SoThich1" id="SoThich1">
+            <label for="SoThich1">SoThich1</label>
+            <br>
+            <input type="checkbox" name="SoThich2" id="SoThich2">
+            <label for="SoThich2">SoThich2</label>
+            
+            <br>
+            <input type="checkbox" name="SoThich3" id="SoThich3">
+            <label for="SoThich3">SoThich3</label>
+        </div>
+        <br>
+        <div>
+            <label for="GioiTinh">GioiTinh</label>
+            <br>
+            <input type="radio" name="GioiTinh" id="GioiTinh1">
+            <label for="GioiTinh1">Nam</label>
+            <br>
+            <input type="radio" name="GioiTinh" id="GioiTinh2">
+            <label for="GioiTinh2">Nu</label>
+            <br>
+            <input type="radio" name="GioiTinh" id="GioiTinh3">
+            <label for="GioiTinh3">Khac</label>
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="QueQuan">QueQuan</label>
+            <br>
+            <select name="QueQuan" id="QueQuan">
+                <option value="HaNoi">HaNoi</option>
+                <option value="HaiPhong">HaiPhong</option>
+                <option value="HaiDuong">HaiDuong</option>
+                <option value="HaiDuong">HaiDuong</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <br>
+    </form>
+     <script>
+        function validateForm(){
+            var username = document.getElementById("Username").value;
+            var password = document.getElementById("Password").value;
+
+            if (username == "" || password == "") {
+                alert("Vui lòng nhập đủ Username và Password");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
+    <!-- <script>
+        function storeData() {
+            if (validateForm() == false) return false;
+            var username = document.getElementById("Username").value;
+            var password = document.getElementById("Password").value;
+            var dob = document.getElementById("DOB").value;
+            var sothich1 = document.getElementById("SoThich1").checked;
+            var sothich2 = document.getElementById("SoThich2").checked;
+            var sothich3 = document.getElementById("SoThich3").checked;
+            var gioiTinh = document.querySelector('input[name = "GioiTinh"]:checked').value;
+            var queQuan = document.getElementById("QueQuan").value;
+
+            const user{
+                
+                Username: username,
+                Password: password,
+                Dob: dob,
+                Sothich1: sothich1,
+                Sothich2: sothich2,
+                Sothich3: sothich3,
+                GioiTinh: gioiTinh,
+                QueQuan: queQuan,
+            };
+            const dataJson = JSON.stringify(user);
+            localStorage.setItem("user", dataJson);
+            alert("Lưu thành công");
+        }
+    </script> -->
+
+    <p> //bam vào các lable thì phải select tới input hiện tại </p>
+    <img  src="/ProPTIT-D21-Web/Quan/Buoi1/buoi1Web/proptit.png" alt="" width="25%">
+    <br>
+    <video width="320" height="240" controls>
+        <source src="/ProPTIT-D21-Web/Quan/Buoi1/buoi1Web/video.mp4" type="video/mp4">
+        keu nom nom
+    </video>
+    <br>
+    <a href="https://www.proptit.com/">Welcom to ProPTIT</a>
+    <p> //Yêu cầu: Bấm vào nhảy vào trang proptit.com </p>
+    <br>
+    <div>
+        <ul>
+            <li>List1</li>
+            <li>List2</li>
+            <li>List3</li>
+            <li>List4</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                    <th>Quê Quán</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Nguyễn Văn A</th>
+                    <th>21</th>
+                    <th>Hà Nội</th>
+                </tr>
+                <tr>
+                    <th>Nguyễn Văn B</th>
+                    <th>21</th>
+                    <th>Hà Tây</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.285663708344!2d105.78457530198979!3d20.98118320203366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1684510065133!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</body>
+</html>
