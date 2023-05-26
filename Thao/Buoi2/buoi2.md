@@ -169,6 +169,22 @@ h1 {background-color: red;}
 ```
 > There is one exception to this rule: if you use the **!important** rule, it will even override inline styles!
 #### Các loại đơn vị độ dài
+##### Absolute units
+The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+![example](https://i.imgur.com/tV8gXzC.png)
+- **px**: Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.
+
+##### Relative units
+Relative length units specify a length relative to another length property.
+![example](https://i.imgur.com/QYuVq4G.png)
+>* **Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.**
+> - rem : đo kích thước dựa trên kích thước phông chữ của phần tử gốc(root element), thường là phần tử \<html>. Kích thước phần tử con sẽ tự
+> - em : đo kích thước dựa trên kích thước phông chữ của phần tử cha gần nhất chứa nó.
+***
+### 4.FLOAT,BOX MODEL
+#### Float
+
+#### Box model
 
 
 
