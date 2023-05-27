@@ -254,6 +254,68 @@ Thuộc tính **align-items**  được sử dụng trong Flexbox để điều 
 
 
 ## 3. Media Query
+Media query là một công cụ trong CSS được sử dụng để áp dụng các quy tắc CSS khác nhau dựa trên các điều kiện môi trường hiển thị của trình duyệt. Nó cho phép bạn điều chỉnh kiểu dáng và bố cục của trang web để tương thích với các thiết bị và màn hình khác nhau.
 
+Media query dựa trên các đặc điểm của màn hình như chiều rộng, chiều cao, tỷ lệ khung hình, độ phân giải và các tính năng khác để xác định khi nào các quy tắc CSS được áp dụng.
+``` css
+@media media-type and (media-feature) {
+  /* Các quy tắc CSS áp dụng trong media query */
+}
+```
+**media-type** là loại phương tiện mà media query sẽ áp dụng, như **screen**, **print**, **speech**.
+**media-feature** là điều kiện mà media query sẽ dựa trên, ví dụ như **max-width**, **min-width**, **orientation**, **resolution**.
+``` css
+@media screen and (max-width: 600px) {
+  /* Các quy tắc CSS áp dụng khi chiều rộng màn hình nhỏ hơn hoặc bằng 600px */
+  body {
+    font-size: 14px;
+  }
+}
+```
+## 4. Break point
+Break point trong CSS là một điểm hoặc một ngưỡng trong thiết kế đáp ứng (responsive design) để xác định khi nào các quy tắc CSS khác nhau sẽ được áp dụng cho các kích thước màn hình khác nhau.
+Khi thiết kế một trang web đáp ứng, ta thường xác định các break point, tức là các giá trị chiều rộng màn hình cụ thể, và tạo ra các tập hợp quy tắc CSS riêng cho mỗi break point đó. Khi màn hình có kích thước nằm trong khoảng của một break point, các quy tắc CSS tương ứng sẽ được áp dụng.
 
+Cách thông thường để xác định break point là sử dụng media queries trong CSS. 
+``` css
+/* Quy tắc CSS áp dụng cho màn hình có chiều rộng nhỏ hơn 600px */
+@media screen and (max-width: 600px) {
+  /* Các quy tắc CSS tại break point 600px */
+}
 
+/* Quy tắc CSS áp dụng cho màn hình có chiều rộng từ 601px đến 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Các quy tắc CSS tại break point 601px - 1024px */
+}
+
+/* Quy tắc CSS áp dụng cho màn hình có chiều rộng lớn hơn 1024px */
+@media screen and (min-width: 1025px) {
+  /* Các quy tắc CSS tại break point lớn hơn 1024px */
+}
+
+```
+>Trong ví dụ trên, ta đã xác định ba break point với các giá trị chiều rộng màn hình là 600px, 601px - 1024px và lớn hơn 1024px. Tương ứng với mỗi break point, ta đã định nghĩa các tập hợp quy tắc CSS riêng để điều chỉnh giao diện tùy theo kích thước màn hình.
+##5. Viewport
+Viewport trong CSS là khu vực hiển thị của màn hình trình duyệt, nơi nội dung của trang web được hiển thị. Nó là một khái niệm quan trọng trong thiết kế đáp ứng (responsive design) để điều chỉnh cách trình duyệt hiển thị và thu nhỏ nội dung trên các thiết bị với các kích thước màn hình khác nhau.
+Để điều chỉnh viewport trong CSS, chúng ta sử dụng meta tag <meta> trong phần <head> của tài liệu HTML. Ví dụ:
+``` css
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+Trong trường hợp này, width=device-width chỉ định rằng chiều rộng của viewport sẽ bằng với chiều rộng của thiết bị, và initial-scale=1.0 đặt tỷ lệ thu phóng ban đầu của trang web là 1.
+## 6. GridView
+Nhiều trang web dựa trên chế độ xem dạng lưới, có nghĩa là trang được chia thành các cột:
+Sử dụng chế độ xem dạng lưới rất hữu ích khi thiết kế trang web. Nó làm cho việc đặt các phần tử trên trang dễ dàng hơn.
+Chế độ xem lưới phản hồi thường có 12 cột và có tổng chiều rộng là 100%, đồng thời sẽ thu nhỏ và mở rộng khi bạn thay đổi kích thước cửa sổ trình duyệt.
+##7. Flexible Media
+Flexible media trong CSS là một cách để điều chỉnh các phương tiện truyền thông (như hình ảnh, video, bản đồ, iframe, ...) để tự động thay đổi kích thước và thích ứng với các kích thước màn hình khác nhau.
+
+Khi trình duyệt hiển thị một phương tiện truyền thông, như một hình ảnh, nó thường giữ nguyên kích thước gốc của nó. Điều này có thể gây ra vấn đề khi màn hình có kích thước nhỏ hơn hoặc lớn hơn kích thước của phương tiện. Flexible media giúp giải quyết vấn đề này bằng cách điều chỉnh phương tiện tự động để phù hợp với kích thước màn hình.
+``` css
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+Trong ví dụ trên, ta đang áp dụng các quy tắc CSS cho các phần tử \<img>. Thuộc tính max-width: 100% giúp hình ảnh co dãn với chiều rộng tối đa bằng với chiều rộng của phần tử chứa nó. Thuộc tính **height: auto** giữ tỷ lệ khung hình chính xác và đảm bảo hình ảnh không bị biến dạng khi co dãn.
