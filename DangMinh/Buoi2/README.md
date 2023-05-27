@@ -241,7 +241,6 @@ Một số đơn vị tương đối chính được sử dụng trong CSS:
 ![percentages](https://codelearn.io/Media/Default/Users/KienTT/image_blog/css-units.PNG)
 
 * **`em`**: Là đơn vị tương đối dựa vào thuộc tính font-size của phần tử mẹ. Ví dụ: Nếu phần tử mẹ có thuộc tính font-size:16px, phần tử con có thuộc tính font-size:2em thì có nghĩa là phần tử con có thuộc tính font-size:32px
-
 * **`rem`(root em)**: Là đơn vị tương đối dựa vào thuộc tính font-size của phần html (root element). Ví dụ: Nếu phần tử html có thuộc tính font-size:12px phần tử mẹ có thuộc tính font-size:16px, phần tử con có thuộc tính font-size:2rem thì có nghĩa là phần tử con có thuộc tính font-size:24px; Tức là đơn vị rem không phụ thuộc vào phần tử mẹ.
 
 **2. Đơn vị tuyệt đối - Absolute Units**
@@ -249,6 +248,7 @@ Một số đơn vị tương đối chính được sử dụng trong CSS:
 Khác với đơn vị tương đối, như tên gọi, đơn vị tuyệt đối sẽ có những giá trị cố định không thay đổi. Đơn vị tuyệt đối không được khuyến khích sử dụng cho màn hình, vì có rất nhiều các kích thước màn hình khác nhau. Nó chỉ nên dùng cho những trường hợp biết chắc kích thước của giao diện, như xuất ra máy in chẳng hạn.
 
 Một số đơn vị tuyệt đối được sử dụng trong CSS:
+
 * px *: pixels (1px = 1/96th of 1in)
 * pt: points (1pt = 1/72 of 1in)
 * pc: picas (1pc = 12 pt)
@@ -345,7 +345,6 @@ Với ví dụ này, chiều rộng thực tế của phần tử được tính
 ```
 
 * Tổng chiều rộng của phần tử = width + left padding + right padding + left border + right border + left margin + right margin.
-
 * Tổng chiều cao của phần tử = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin.
 
 ## **VI. Position**
@@ -409,11 +408,11 @@ div.fixed {
 
 ### 4. Absolute
 
-Phần tử sẽ được hiển thị theo vị trí tuyệt đối với vị trí của phần tử cha. 
+Phần tử sẽ được hiển thị theo vị trí tuyệt đối với vị trí của phần tử cha.
 
-**Chú ý:** 
+**Chú ý:**
+
 * Nếu không có phần tử cha nào, nó sẽ được hiển thị theo vị trí tuyệt đối với vị trí của thẻ `<html>`, và sẽ di chuyển khi người dùng cuộn trang.
-
 * Phần tử có vị trí **absolute** có thể ghi đè lên các phần tử khác.
 
 Ví dụ:
@@ -707,7 +706,6 @@ Các thuộc tính sau có thể được sử dụng để định dạng dòng
 * `float`
 * `clear`
 
-
 **`::first-letter` Pseudo-element**
 
 Pseudo-element `::first-letter` được sử dụng để định dạng chữ cái đầu tiên của một phần tử.
@@ -781,7 +779,6 @@ Ví dụ chọn phần văn bản được chọn:
 
 ![::selection](./img/selection_pe.png)
 
-
 ## **XI. Text styling**
 
 ### 1. Text color
@@ -817,6 +814,69 @@ div {
 
 Thuộc tính `text-align` xác định căn chỉnh văn bản của phần tử.
 
+Căn chỉnh văn bản có thể là:
 
+* `left` - căn lề văn bản về bên trái
+* `right` - căn lề văn bản về bên phải
+* `center` - căn lề văn bản về giữa
+* `justify` - căn lề văn bản về đều hai bên
 
+**Text Alignment**
 
+```CSS
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+```
+
+### 3. Text decoration
+
+Thuộc tính `text-decoration` xác định trang trí văn bản của phần tử.
+
+Trang trí văn bản có thể là:
+
+* `text-decoration-line`
+* `text-decoration-color`
+* `text-decoration-style`
+* `text-decoration-thickness`
+* `text-decoration`
+
+**`text-decoration-line`**
+
+Thuộc tính `text-decoration-line` xác định loại trang trí văn bản.
+
+Loại trang trí văn bản có thể là:
+
+* `none` - không có trang trí văn bản
+* `underline` - một đường gạch chân dưới văn bản
+* `overline` - một đường gạch trên văn bản
+* `line-through` - một đường gạch ngang qua văn bản
+* `underline overline` - một đường gạch chân dưới và một đường gạch trên văn bản
+
+**`text-decoration-color`**
+
+Thuộc tính `text-decoration-color` xác định màu sắc của trang trí văn bản.
+
+**`text-decoration-style`**
+
+Thuộc tính `text-decoration-style` xác định kiểu của trang trí văn bản.
+
+Kiểu trang trí văn bản có thể là:
+
+* `solid` - đường gạch liền
+* `double` - đường gạch đôi
+* `dotted` - đường gạch chấm
+* `dashed` - đường gạch nối
+* `wavy` - đường gạch sóng
+* `initial` - thiết lập kiểu trang trí văn bản về giá trị ban đầu
+* `inherit` - kế thừa kiểu trang trí văn bản từ phần tử cha
+
+**`text-decoration-thickness`**
+
+Thuộc tính `text-decoration-thickness` xác định độ dày của trang trí văn bản.
+
+Độ dày của trang trí văn bản có thể là:

@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.more {
+    position: relative;
+    display: inline-block;
+}
+
+.more_list {
+    display: none;
+}
+
+.more:link,
+.more:visited {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.more:hover .more_list {
+    position: absolute;
+    display: block;
+    background-color: gray;
+    color: black;
+}
+
+.nav {
+    
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    /* height: 30px; */
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.background {
+    display: block;
+    /* background-color: red; */
+    background: url("https://www.w3schools.com/w3images/chicago.jpg")  no-repeat top center;
+    background-size: contain;
+    /* padding-top: 50%; */
+    /* width: 100vw; */
+    height: 100vh;
+}
