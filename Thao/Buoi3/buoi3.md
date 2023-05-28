@@ -454,3 +454,127 @@ img {
 }
 ```
 Trong ví dụ trên, ta đang áp dụng các quy tắc CSS cho các phần tử \<img>. Thuộc tính max-width: 100% giúp hình ảnh co dãn với chiều rộng tối đa bằng với chiều rộng của phần tử chứa nó. Thuộc tính **height: auto** giữ tỷ lệ khung hình chính xác và đảm bảo hình ảnh không bị biến dạng khi co dãn.
+##8. CSS Sass
+CSS Sass (Syntactically Awesome Style Sheets) là một ngôn ngữ mở rộng của CSS. Nó cung cấp các tính năng và cú pháp nâng cao giúp làm việc với CSS dễ dàng hơn và giảm thiểu lặp lại mã CSS.
+Vì vậy, bạn cần nhập các giá trị HEX đó bao nhiêu lần? Nhiều thời gian. Và những gì về các biến thể của cùng một màu sắc?
+
+Giả sử chúng ta có một trang web với 3 màu chính. Thay vì gõ các giá trị trên nhiều lần, bạn có thể sử dụng Sass và viết như sau:
+``` css
+/* define variables for the primary colors */
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+$primary_3: #878f99;
+
+/* use the variables */
+.main-header {
+  background-color: $primary_1;
+}
+
+.menu-left {
+  background-color: $primary_2;
+}
+
+.menu-right {
+  background-color: $primary_3;
+}
+```
+Vì vậy, khi sử dụng Sass và màu chính thay đổi, bạn chỉ cần thay đổi nó ở một nơi.
+#### File Type
+Sass files has the ".scss" file extension.
+#### Sass Comments
+Sass supports standard CSS comments /* comment */, and in addition it supports inline comments // comment:
+``` scss
+/* define primary colors */
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+
+/* use the variables */
+.main-header {
+  background-color: $primary_1; // here you can put an inline comment
+}
+```
+#### Biến trong Sass
+Biến là một cách để lưu trữ thông tin mà bạn có thể sử dụng lại sau này. With Sass, you can store information in variables, like:
+- strings
+- numbers
+- colors
+- booleans
+- lists
+- nulls
+Sass sử dụng ký hiệu $, theo sau là tên, để khai báo các biến:
+##### Syntax
+> $variablename: value;
+``` scss
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+```
+``` css
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+#container {
+  width: 680px;
+}
+```
+``` html
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="mystyle.css">
+<body>
+
+<h1>Hello World</h1>
+
+<p>This is a paragraph.</p>
+
+<div id="container">This is some text inside a container.</div>
+
+</body>
+</html>     
+```
+##### Sass Variable Scope
+[Ví dụ](https://www.w3schools.com/sass/showsass.php?filename=demo_sass_var1)
+Màu của văn bản bên trong thẻ \<p> sẽ có màu đỏ hay xanh lục? Nó sẽ có màu đỏ!
+
+Định nghĩa khác, $myColor: green; nằm trong quy tắc \<h1> và sẽ chỉ khả dụng ở đó!
+##### Using Sass !global
+Mặc định cho variable scope  có thể được ghi đè bằng cách sử dụng khóa chuyển **!global.**
+
+**!global** chỉ ra rằng một biến là toàn cầu, có nghĩa là nó có thể truy cập được ở mọi cấp độ.
+[Ví dụ](https://www.w3schools.com/sass/showsass.php?filename=demo_sass_var3)
+#### Sass Nested Rules
+Sass cho phép bạn lồng các bộ chọn CSS theo cách tương tự như HTML.
+[Ví dụ](https://www.w3schools.com/sass/showsass.php?filename=demo_sass_nest1)
+#### Sass @import and Partials
+Sass cho phép bạn chia nhỏ mã CSS thành các file riêng biệt và import chúng vào file chính. Điều này giúp tổ chức mã dễ dàng và quản lý mã CSS lớn hơn.
+#### Sass @mixin and @include
+Chỉ thị @mixin cho phép bạn tạo mã CSS để sử dụng lại trên toàn bộ trang web.
+
+Chỉ thị @include được tạo để cho phép bạn sử dụng (bao gồm) mixin.
+#### Sass @extend and Inheritance
+Trong Sass, thuộc tính @extend được sử dụng để kế thừa (extend) các quy tắc CSS từ một selector (bộ chọn) đã tồn tại và áp dụng chúng cho một selector khác. Điều này giúp tái sử dụng mã CSS và tạo ra các quy tắc CSS hiệu quả hơn.
+``` scss
+.selector1 {
+  /* Quy tắc CSS của selector1 */
+}
+
+.selector2 {
+  @extend .selector1;
+  /* Thêm quy tắc CSS của selector2 */
+}
+```
+
