@@ -35,6 +35,8 @@
     <br>
     <br>
     <a href="javascript:history.back()">Quay lại</a>
+    <br>
+    <a target="_self" href="buoi1.html">Quay lại 222</a>
     <script>
         var urlParams = new URLSearchParams(window.location.search);
         var username = urlParams.get("Username");
@@ -47,10 +49,10 @@
         // Điền thông tin vào bảng
 
         // Sử dụng JavaScript
-        // document.getElementById("username").innerHTML = username;
-        // document.getElementById("password").innerHTML = password;
-        // document.getElementById("ngaysinh").innerHTML = ngaysinh;
-        // document.getElementById("gioitinh").innerHTML = gioitinh;
+        // document.getElementById("username").innerText = username;
+        // document.getElementById("password").innerText = password;
+        // document.getElementById("ngaysinh").innerText = ngaysinh;
+        // document.getElementById("gioitinh").innerText = gioitinh;
 
         // var st = "";
         // for (var i = 0; i < sothich.length; i++) {
@@ -62,7 +64,7 @@
         // Sử dụng HTML
         var st = "";
         for (var i = 0; i < sothich.length; i++) {
-            st += (i + 1).toString() + ". " + sothich[i] + <br />;
+            st += (i + 1).toString() + ". " + sothich[i] + "<br />";
         }
         document.getElementById("table").innerHTML = "<tr><td>" + username + "</td><td>" + password + "</td><td>" + ngaysinh + "</td><td>" + gioitinh + "</td><td>" + st + "</td><td>" + quequan + "</td></tr>";
     </script>
