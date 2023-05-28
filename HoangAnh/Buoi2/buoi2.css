@@ -1,0 +1,33 @@
+.nav{
+    background-color: black;
+    /* height: 40px; */
+}
+.nav .choice{
+    color: aliceblue;
+    display: inline-block; 
+    padding: 10px;
+}
+.detail{
+    display: none;
+}
+.nav .choice:hover{
+    background-color: brown;
+}
+.nav .more:hover .detail{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 46px;
+    left: 313px;
+    
+}
+.nav .more::after{
+    
+}
+
+.image{
+    width: 100vw;
+    height: auto;
+}

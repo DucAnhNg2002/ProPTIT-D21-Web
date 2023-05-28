@@ -518,8 +518,9 @@
             
             | Đơn vị | Mô tả |
             | --- | --- |
-            | em | Bằng cỡ font của phần tử cha. Có nghĩa phần tử cha có cỡ (font-size) là 14px, thì 1em là 14px - nếu cỡ font phần tử cha là 10pt thì 2em là 20px. |
-            | rem | Bằng cỡ font của phần tử gốc - root, trong CSS để thiết lập các thuộc tính của root thì dùng ký hiệu :root, rồi định nghĩa các thuộc tính giống class: |
+            | em | Bằng cỡ font-size của phần tử cha. Có nghĩa phần tử cha có cỡ (font-size) là 14px, thì 1em là 14px - nếu cỡ font phần tử cha là 10pt thì 2em là 20px. |
+            | rem | Bằng cỡ font của phần tử gốc - root, trong CSS để thiết lập các thuộc tính của root thì dùng ký hiệu :root, rồi định nghĩa các thuộc tính giống class: *(Mặc định là 16px)*|
+            |lh|Theo chiều cao dòng của phần tử cha tương ứng (line height)|
             | vw | Bằng 1% chiều rộng cửa sổ |
             | vh | Bằng 1% chiều cao cửa sổ |
             | % | Theo tỉ lệ của phần tử cha |
