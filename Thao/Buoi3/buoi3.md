@@ -307,7 +307,141 @@ Trong trường hợp này, width=device-width chỉ định rằng chiều rộ
 ## 6. GridView
 Nhiều trang web dựa trên chế độ xem dạng lưới, có nghĩa là trang được chia thành các cột:
 Sử dụng chế độ xem dạng lưới rất hữu ích khi thiết kế trang web. Nó làm cho việc đặt các phần tử trên trang dễ dàng hơn.
-Chế độ xem lưới phản hồi thường có 12 cột và có tổng chiều rộng là 100%, đồng thời sẽ thu nhỏ và mở rộng khi bạn thay đổi kích thước cửa sổ trình duyệt.
+Chế độ xem lưới thường có 12 cột và có tổng chiều rộng là 100%, đồng thời sẽ thu nhỏ và mở rộng khi bạn thay đổi kích thước cửa sổ trình duyệt.
+#### Building a Responsive grid-view
+- Đầu tiên đảm bảo rằng tất cả các element của HTML đều có thuộc tính **box-sizing** được set là **border-box**. Điều này đảm bảo rằng phần padding và border được bao gồm trong tổng chiều rộng và chiều cao của các phần tử.
+``` css
+* {
+  box-sizing: border-box;
+}
+```
+``` html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="menu">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="main">
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>		
+</div>
+
+</body>
+</html>
+```
+Tuy nhiên, chúng tôi muốn sử dụng chế độ xem lưới đáp ứng với 12 cột để có nhiều quyền kiểm soát hơn đối với trang web.
+
+Đầu tiên chúng ta phải tính tỷ lệ phần trăm cho một cột: 100%/12 cột = 8,33%.
+
+Sau đó, chúng tôi tạo một lớp cho mỗi trong số 12 cột, class="col-" và một số xác định số lượng cột mà phần đó sẽ kéo dài:
+``` html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="col-9">
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+</div>
+
+</div>
+
+</body>
+</html>
+```
+Tất cả các cột này phải float ở bên trái và có phần padding là 15px:
 ##7. Flexible Media
 Flexible media trong CSS là một cách để điều chỉnh các phương tiện truyền thông (như hình ảnh, video, bản đồ, iframe, ...) để tự động thay đổi kích thước và thích ứng với các kích thước màn hình khác nhau.
 
