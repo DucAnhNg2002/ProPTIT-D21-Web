@@ -123,6 +123,7 @@ The lines between rows are called row lines.
 Flexbox là một kỹ thuật trong CSS để tạo bố cục và căn chỉnh các phần tử trong một container. Nó cung cấp một cách linh hoạt để xếp chồng, căn chỉnh và phân bổ không gian cho các phần tử trong một dòng hoặc cột.
 
 Để sử dụng Flexbox, bạn cần thiết lập container chứa các phần tử thành một flex container bằng cách sử dụng thuộc tính CSS **"display"** với giá trị là **"flex"** hoặc **"inline-flex"**. Sau đó, bạn có thể sử dụng các thuộc tính và giá trị của Flexbox để điều chỉnh căn chỉnh, sắp xếp và phân bổ không gian cho các phần tử con bên trong.
+Nếu bạn **không** sử dụng thuộc tính **flex-direction** trong Flexbox, giá trị mặc định sẽ là **row**, tức là các flex items sẽ được xếp theo hướng **ngang** (dòng). Điều này có nghĩa là các flex items sẽ xếp từ trái sang phải trên một dòng và khi không đủ không gian, chúng sẽ tự động xuống dòng mới.
 ``` html
 <!DOCTYPE html>
 <html>
