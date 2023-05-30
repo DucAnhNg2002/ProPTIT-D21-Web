@@ -1,62 +1,310 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-.more {
-    position: relative;
-    display: inline-block;
-}
-
-.more_list {
-    display: none;
-}
-
-.more:link,
-.more:visited {
-    text-decoration: none;
-    padding: 10px 10px;
-}
-
-.more:hover .more_list {
-    position: absolute;
-    display: block;
-    background-color: gray;
-    color: black;
-}
-
-.nav {
-    
-    color: white;
-    text-decoration: none;
-    padding: 0px 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav {
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 0;
     background-color: black;
-    /* height: 30px; */
-    margin: 0px;
+    padding: 1.3%;
+    margin: 0;
+    z-index: 1;
 }
 
-ul {
+.nav {
+    color: white;
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav-ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.nav-more-list {
+    display: none;
+}
+
+.nav-more:hover .nav-more-list {
+    text-decoration: none;
     list-style-type: none;
-    margin: 0px;
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
 }
 
-ul li {
-    display: inline-block;
+.nav-more-list li a {
+    color: rgb(0, 0, 0);
 }
 
 .background {
+    position: relative;
     display: block;
-    /* background-color: red; */
-    background: url("https://www.w3schools.com/w3images/chicago.jpg")  no-repeat top center;
-    background-size: contain;
-    /* padding-top: 50%; */
-    /* width: 100vw; */
-    height: 100vh;
+    background: url("https://www.w3schools.com/w3images/chicago.jpg") no-repeat top center;
+    background-size: cover;
+    padding-top: 50%;
+}
+
+.background_text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    color: white;
+    align-items: center;
+}
+
+.background_text .city-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.background_text .thanks-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+.section-heading {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.section-quote {
+    opacity: 0.6;
+    text-align: center !important;
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 5px 0px 16px;
+}
+
+.content p.text {
+    text-align: justify !important;
+    line-height: 1.5;
+    font-size: 15px;
+    text-size-adjust: 100%;
+    margin-bottom: 20px;
+}
+
+.member-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    padding-bottom: 32px;
+}
+
+.member-name {
+    padding: 10px 0;
+}
+
+.member img {
+    width: 130px;
+}
+
+.ads-wrapper {
+    background-color: black;
+    color: white;
+}
+
+.ads h2 {
+    text-align: center;
+}
+
+.month-list-wrapper {
+    width: 100%;
+}
+
+.ads-month-list {
+    list-style: none;
+    background-color: white;
+    color: black;
+
+}
+
+.ads-month-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.ads-month-list li span {
+    margin-left: 16px;
+    padding: 0px 8px;
+    background-color: #F44336;
+    color: white;
+}
+
+ul.ads-month-list li:last-child {
+    border-bottom: none;
+}
+
+ul.ads-month-list li:last-child span {
+    float: right;
+    background-color: black;
+    color: white;
+    margin-right: 16px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.tour-place-list {
+    display: flex;
+    padding: 32px 0;
+    justify-content: space-between;
+}
+
+.tour-place-item {
+    /* background-color: black; */
+    color: black;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-place-item img {
+    width: 100%;
+    margin: 0;
+}
+
+.tour-place-description {
+    background-color: white;
+    padding: 0px 16px;
+}
+
+.tour-place-description .title,
+.date,
+.description {
+    margin: 15px 0px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.tour-place-description .title {
+    font-weight: 645;
+}
+
+.tour-place-description .date {
+    opacity: 0.6;
+}
+
+.place-buy-ticket {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.infor-wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
+.list-contact {
+    list-style-type: none;
+    width: 50%;
+    float: left;
+}
+
+.list-contact .address p::before {
+    content: "\e62c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.list-contact .phone p::before {
+    content: "\e325";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.list-contact .email p::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.form {
+    display: inline-block;
+    width: 50%;
+}
+
+.row-none .col-half {
+    float: left;
+    width: 50%;
+}
+
+.row-none .col-half-left {
+    padding-right: 8px;
+}
+
+.row-none .col-half-right {
+    padding-left: 8px;
+}
+
+.input input {
+    width: 100%;
+    padding: 8px;
+}
+
+.input input[type="message"] {
+    margin: 8px 0px;
+}
+
+.row-none button {
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+}
+
+.map-section img {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.footer {
+    padding: 64px 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .background_text {
+        display: none;
+    }
 }

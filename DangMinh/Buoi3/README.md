@@ -402,3 +402,10 @@ Ví dụ [trang web không có thẻ meta viewport](https://www.w3schools.com/cs
 Ví dụ [trang web có thẻ meta viewport](https://www.w3schools.com/css/example_withviewport.htm):
 
 ![image](https://www.w3schools.com/css/img_viewport2.png)
+
+## **VI. Gridview**
+
+Gridview là một phần của CSS3, cho phép chúng ta tạo bố cục trang web với các hàng và cột.
+
+Gridview được thiết kế để hoạt động với các thiết bị màn hình khác nhau.
+
