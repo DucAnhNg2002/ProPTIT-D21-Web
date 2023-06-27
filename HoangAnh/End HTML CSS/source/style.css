@@ -1,0 +1,665 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    text-align: center;
+}
+.header .top-banner-container {
+    background-color: #e073ad;
+}
+
+p #top-banner {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-bar {
+    height: 60px;
+    align-items: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav-bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
+
+.logo {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/logo/fahasa_logo.png) no-repeat center
+        center;
+    background-size: contain;
+    width: 220px;
+    height: 36px;
+}
+.see-more {
+    display: flex;
+    width: 89px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.see-more:hover .dropdown-container {
+    display: block;
+}
+
+#search {
+    width: 465px;
+    height: 40px;
+    padding: 0 85px 0 24px;
+    border: 1px solid #cdcfd0;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 100;
+    color: #545759;
+}
+
+#search::placeholder {
+    color: #cdcfd0;
+}
+#search:focus {
+    /* border-color: red; */
+    outline: none;
+}
+.search-container {
+    padding: 10px;
+    position: relative;
+}
+
+.button {
+    border-radius: 8px;
+}
+
+.search-button {
+    position: absolute;
+    display: flex;
+    width: 72px;
+    height: 30px;
+    background-color: #c92127;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button > #icon-search {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-menu {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg) no-repeat center center;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+}
+
+.icon-seemore {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg) no-repeat
+        center center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+.others-option {
+    display: flex;
+    justify-content: space-between;
+    width: 315px;
+    padding: 0 0 0 10px;
+    height: 100%;
+    /* height: 79px; */
+    align-items: center;
+}
+
+.others-option-container > .others-option-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.others-option-container {
+    height: 100%;
+    position: relative;
+}
+.notifi-button:hover .notifi-dropdown {
+    display: block;
+}
+.icon-notifi {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_gray.svg) no-repeat center
+        center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+}
+.icon-notifi-dropdown {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_black.svg) no-repeat center
+        center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+.label-notifi-dropdown {
+    padding-left: 4px;
+    font-weight: bold;
+}
+.notifi-dropdown {
+    background-color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    width: 264px;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+}
+.notifi-dropdown-top {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    border-bottom: 1px solid #f2f4f5;
+}
+.notifi-dropdown-center {
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+}
+.notifi-dropdown-center-image {
+    padding: 24px;
+}
+.notifi-dropdown-center-text {
+    color: #0d0e0f;
+    font-size: 1.2em;
+}
+.notifi-dropdown-center > div:nth-child(3) {
+    padding-bottom: 24px;
+}
+.notifi-dropdown-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notifi-dropdown-button {
+    display: flex;
+    border-radius: 8px;
+    padding: 0 16px 8px 16px;
+    height: auto;
+}
+.notifi-dropdown-button > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#signin-button {
+    color: #fff;
+    background-color: #c92127;
+    border: 2px solid #c92127;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+.notifi-dropdown-center > div:last-child {
+    padding-bottom: 16px;
+}
+#signup-button {
+    color: #c92127;
+    background-color: #fff;
+    border: 2px solid #c92127;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+.icon-notifi-empty {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/customer/ico_login.svg) no-repeat
+        center center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+.icon-cart {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_cart_gray.svg) no-repeat center
+        center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+}
+
+.icon-account {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_account_gray.svg) no-repeat center
+        center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+}
+.account-button:hover .account-dropdown {
+    display: block;
+}
+
+.account-dropdown {
+    background-color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    width: 264px;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+}
+.account-dropdown > div:first-of-type {
+    padding: 16px 16px 8px 16px;
+}
+.account-dropdown > div:last-of-type {
+    padding: 0 16px 16px 16px;
+}
+.icon-face-signin {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/logo/facebook_logo.svg) no-repeat
+        center center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+}
+#signin-face-button {
+    color: #fff;
+    background-color: #1478fc;
+    border: 2px solid #1478fc;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+.account-button .notifi-dropdown-button:hover a > span {
+    transform: scale(1.03);
+}
+.icon-others-option {
+    margin-bottom: 6px;
+}
+.language-option-button {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #cdcfd0;
+    border-radius: 8px;
+    height: 25px;
+    padding: 8px;
+    align-items: center;
+}
+.flag {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg) no-repeat center center;
+    background-size: contain;
+    height: 24px;
+    width: 37px;
+}
+
+.label-center {
+    color: #7a7e7f;
+    font-size: 12px;
+    /* margin: 4px; */
+}
+.dropdown {
+    z-index: 999;
+}
+.dropdown-container {
+    background-color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0, 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    padding: 24px 12px 16px 12px;
+    text-align: left;
+}
+
+.table-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.table-dropdown > div:first-of-type {
+    width: 280px;
+}
+
+.table-dropdown > div:nth-of-type(2) {
+    width: 12px;
+    border-right: 1px solid #cdcfd0;
+}
+
+.table-dropdown > div:nth-of-type(3) {
+    width: calc(100% - 292px);
+}
+
+.parent-choices-list {
+    padding-left: 0;
+    margin: 0;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.header-title.parent-title {
+    padding: 0 12px;
+    margin-bottom: 16px;
+    color: #7a7e7f;
+}
+.child-title-container {
+    display: flex;
+    padding: 0 24px;
+}
+.child-title-container .child-title {
+    display: flex;
+    padding: 0 8px;
+}
+.icon-hanhtrangdentruong {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_hanhtrangdentruong.svg)
+        no-repeat center center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+.choice {
+    display: block;
+    padding: 16px 12px 16px 12px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.choice:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+}
+.child-title-container {
+    margin-bottom: 5px;
+}
+.child-content-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.child-col {
+    padding-left: 24px;
+    margin: 8px 0 8px 0;
+}
+.child-col h3 {
+    line-height: 24px;
+}
+.col-header {
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+}
+.child-col-list {
+    padding: 0;
+}
+
+.child-col-list li {
+    padding: 8px 5px 0 0;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #666666;
+}
+.child-col-list .see-all {
+    color: #2489f4;
+}
+.header-homepage-menu {
+    background-color: #F0F0F0;
+}
+.ads-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1230px; /* FIX */
+    margin-top: 16px;
+}
+.auto-slider-container {
+    position: relative;
+    display: flex;
+    width: calc(100% - 392px - 10px);
+    height: 320px;
+}
+.auto-slider-container > div:nth-child(3){
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+}
+.swiper-button {
+    position: absolute;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+    box-shadow: 0px 2px 8px #00000029;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button.prev-button {
+    left: -12px;
+}
+.icon-arrow {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_arrow_gray.svg) no-repeat center center;
+    background-size: contain;
+    width: 14px;
+    height: 14px; 
+}
+.swiper-button:hover {
+    top: 50%;
+    transform-origin: top left;
+    transform: scale(1.7) translate(-25%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+    
+}
+.swiper-button:not(:hover) {
+    top: 50%;
+    transform-origin: top left;
+    transform: scale(1) translate(0, -50%);
+    transition: all 0.3s ease-in-out 0s;
+    
+}
+.icon-arrow.right {
+    transform: rotate(-180deg);
+}
+.swiper-button.next-button {
+    right: -12px;
+}
+.auto-slider {
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+}
+.slide {
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    animation: slideAnimation 30s infinite;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    12% {
+        transform: translateX(0);
+    }
+    13% {
+        transform: translateX(-100%);
+    }
+    24.5% {
+        transform: translateX(-100%);
+    }
+    25.5% {
+        transform: translateX(-200%);
+    }
+    37% {
+        transform: translateX(-200%);
+    }
+    38% {
+        transform: translateX(-300%);
+    }
+    49.5% {
+        transform: translateX(-300%);
+    }
+    50.5% {
+        transform: translateX(-400%);
+    }
+    62% {
+        transform: translateX(-400%);
+    }
+    63% {
+        transform: translateX(-500%);
+    }
+    74.5% {
+        transform: translateX(-500%);
+    }
+    75.5% {
+        transform: translateX(-600%);
+    }
+    87% {
+        transform: translateX(-600%);
+    }
+    88% {
+        transform: translateX(-700%);
+    }
+    99.5% {
+        transform: translateX(-700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.swiper-bullets {
+    display: flex;
+
+}
+.swiper-bullet {
+    background-color: #fff;
+}
+.header-others-ads {
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+    margin-left: 8px;
+}
+.header-others-ads .others-ads-img > img {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    background-color: #c92127;
+}
+.header-others-ads > div:last-child > img {
+    margin-bottom: 0px;
+}
+.main-container {
+    background-color: #F0F0F0;
+    width: 100%;
+    height: auto;
+}
+.main-header-coupon-container {
+    padding-top: 20px;
+    max-width: 100%;
+}
+.coupon-row {
+    max-width: 100%;
+    position: relative;
+}
+.coupon-item-container {
+    margin-right: 10px;
+}
+#item1 {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #666666;
+}
+
+h3 {
+    margin: 0;
+}
+#top-banner {
+    max-width: 100%;
+}
+.container {
+    position: relative;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1230px;
+    }
+}
+.no-margin-right-important {
+    margin-right: 0 !important
+}
+/* @media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+} */
