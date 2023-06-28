@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: sans-serif, Helvetica, Arial;
+    background-color: #f0f0f0;
+    color: #333333;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.428571429;
+    text-align: left;
+    position: relative;
+    overflow: auto;
+}
+
+a {
+    cursor: pointer;
+}
+
+.banner {
+    text-align: center;
+    background-color: #3e82c0;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: auto;
+    vertical-align:top;   
+    max-width: 100%;
+}
+
+.container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;  
+    height: 68px;
+}
+.container_banner{
+    margin-left: 20px;
+    position: relative;
+    width: 1230px;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner_2{
+    background-color: white;
+    height: 68px;
+    margin: left 0px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    width: 99px;
+    height: auto;
+    cursor: pointer;
+
+}
+.icon_menu{
+    display: inline-block;
+  width: 36px;
+  height: 36px;
+   background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg');
+   background-position: center;
+}
+.icon_seemore{
+    display: inline-block;
+  width: 16px;
+  height: 16px;
+   background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg');
+   background-position: center;
+}
+.center{
+    width: calc(100% - 619px);
+    padding: 15px 5px 0 8px;
+    position: relative;
+}
+.boxsearch{
+    width: 100%;  
+}
+.search{
+    height: 40px;
+    
+}
+#search_input{
+    width: 100%;
+    font-size: 1.077em;
+    height: inherit;
+    border:1px solid #CDCFD0 ;
+    line-height: 1.42857;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.search_area{
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    position: absolute;
+    top: calc(50% - -1px);
+    right: 10px;
+    transform: translate(0, -50%);
+    font-size: 21px;
+    width: 72px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_search{
+    display: inline-block;
+    background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_search_white.svg');
+    width: 20px;
+   height: 20px;
+   background-position: center;
+}
+.other{
+    padding-left: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    color: #646464;
+}
+.other .notification{
+    display: flex;
+    flex-direction: column;
+}
+.area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+.flag .area{
+    margin-left: 20px;
+    padding: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+  
+}
+.container_2{
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.banner_area{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 320px;
+}
+.swiper_banner{
+    width: calc(100% - 400px);
+    max-width: 840px;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+.icon_swiper{
+    position:absolute;
+    background-color: #ffff;
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    border-radius:50%;
+    z-index: 10;
+    box-shadow: 0px 2px 8px #00000029;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 24px;
+    width: 24px;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%); 
+}
+
+#left{
+   left: -12px;
+}
+
+.right{
+    transform: rotate(-180deg);
+    float: right;  
+}
+#right{
+    right: -12px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.swiper_image{
+    width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+
+}
+.other_banner{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 8px;
+    width: 392px;
+    height: 100%;
+    max-height: 100%;
+    max-width: 400px;
+  
+}
+.other_1 ,.other_2{
+    width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.main_container{
+    margin-top: 0px;
+}
+.in_container{
+    width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fhs_homebanner{
+    
+    margin-top: 10px;
+    display: flex;
+}
+.item_area{
+    margin-bottom: 0px;
+    margin-top: 16px;
+    margin-right: 10px;
+    width: 25%;
+    height: auto;
+}
+.row_item_menu{
+    margin: 15px 0px 0px 0px;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px 4px !important;
+    display: flex;
+    margin-top: 20px;
+}
+.item_menu_area{
+    width:10%;
+    height:auto;
+
+}
+
+.item_menu_area img{
+    width:40% ;
+}
+.name_item{
+    padding: 10px 10px 0px;
+    font-size: 14px;
+    text-align: center;
+}
+#flashsale_slider{
+    margin: 20px,0px,0px,0px;
+    display: block;
+    border:1px solid #e6e6e6;
+    background: white;
+}
+.flashsale_header{
+    background-color: #FCDAB0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.flashsale_header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.flashsale_title{
+    font-weight: 550;
+    margin-left: 10px;
+    font-size: 1.31em;
+    color: #1F1D1D;
+}
+.flashsale_header .split{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-left: 2px solid #646464;
+    height: 20px;
+}
+ .countdown_label{
+    font-size: 1.1em;
+    font-weight:300 ;
+    color: black;
+    margin-right: 10px;
+}
+.countdown{
+    color: #fff;
+    font-size: 16px;
+    padding-right: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-weight: 400px;
+}
+.number{
+    padding: 4px 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.countdown > span{
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+#all_flashsale{
+    background: white;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.flashsale_body{
+    margin: 10px 0px 5px 0px;
+    min-height: 400px;
+}
+.bx_wrapper{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.bx_viewport ul{
+    list-style: disc outside;
+    padding-left: 1.5em;
+}
+.flashsale_item{
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 270px;
+    margin-right: 45px;
+
+}
+.label_sale{
+    background-color: #F7941E;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 0px !important;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 1.2em !important;
+    font-weight: 600;
+}
+.box_content{
+    padding: 0 0 10px 0;    
+}
+.product{
+
+    height: 2030;
+    display: flex;
+    justify-content: center;
+    margin: 0px,0px,10px;
+}
+.flashsale_list{
+    display: flex;
+
+}
+.flashsale_item{
+    display:flex;
+    flex-direction: column;
+}
+.h2{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    list-style: none;
+    font-weight: normal;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    text-decoration: none;
+    transition: all 300ms ease-in 0s;
+    padding-top: 0px !important;
+    line-height: 1.4em;
+    word-break: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 2.8em;
+    max-height: 2.8em;
+    font-size: 0.78em;
+    color: #333333;
+}
+.xemthem{
+    text-align: center;
+    margin-top: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.xemthem a{
+    box-shadow: 2px 3px 5px #ccc;
+    font-size: 14px;
+    color: #fff!important;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    width: 220px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #ff9800, #F7695D);
+    text-decoration: none;
+}
+.destop_only{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+
+}
+fhs_block{
+    align-items: center;
+    align-content: center;
+}
+.title{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #212121;
+    letter-spacing: 0px;
+}
+fhs_block_line{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+    line-height: 1.428571429;
+    color: #333333;
+    font-weight: 400;
+    font-family: nunito-sans, sans-serif, Helvetica, Arial;
+    text-align: left;
+    font-size: 13px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 16px;
+    background-color: #fff;
+}
+.DA{
+   padding-left: 16px;
+    width: 100%;
+    height: 2px;
+    background-color: #F2F4F5;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.one_item{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.23em;
+}
+
+
+
+

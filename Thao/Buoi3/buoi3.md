@@ -13,6 +13,8 @@ Hệ thống Grid Layout của CSS cung cấp một hệ thống bố cục dạ
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-template-rows:repeat(4,100px)
+  grid-template-rows:100px 100px 100px 100px
   background-color: #2196F3;
   padding: 10px;
   
@@ -224,6 +226,8 @@ Thuộc tính flex-wrap trong Flexbox xác định liệu các phần tử con t
 Thuộc tính **flex-flow** trong CSS là một thuộc tính ngắn gọn để đồng thời xác định các giá trị cho **flex-direction** và **flex-wrap**. Nó giúp định nghĩa hướng sắp xếp và xuống dòng của các phần tử con trong một flex container.
 ``` css
 flex-flow: <flex-direction> <flex-wrap>;
+flex-grow:/*ti le cua cac item*/
+order:/*hoan doi vi tri cac item*/
 ```
 #### justify-content
 Thuộc tính justify-content trong CSS được sử dụng trong Flexbox để điều chỉnh căn chỉnh các phần tử con theo **chiều ngang** trong một flex container.
