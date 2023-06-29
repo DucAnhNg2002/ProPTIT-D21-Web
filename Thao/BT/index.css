@@ -627,7 +627,47 @@ img{
     margin-top: 10px;
     color: #333333;
 }
-
-
+.special_price{
+    line-height: 1rem;
+    font-size: 1rem !important;
+    color: #C92127;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.old_price{
+    padding-top: 10px;
+    color: #888888;
+    text-decoration: line-through;
+}
+.rate_star{
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-content: center;
+}
+.rating_box{
+    width: 80px;
+    height: 16px;
+    float: left;
+    margin-right: 3px;
+    margin-left: 0px;
+    
+    background: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_star_gray.svg');  
+    background-size: 16px 16px;
+   
+}
+.amount{
+    color: #F6A500 !important;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+}
+.progress_bar{
+    text-align: center;
+    border-radius: 15px;
+    height: 16px;
+    position: relative;
+    background-color: #F1B1B0;
+}
 
 
