@@ -256,6 +256,7 @@ img{
     width: 1230px;
     margin-right: auto;
     margin-left: auto;
+    background-color: white;
 }
 .fhs_homebanner{
     
@@ -371,11 +372,13 @@ img{
     padding-left: 1.5em;
 }
 .flashsale_item{
-    float: left;
+   
     list-style: none;
     position: relative;
     width: 270px;
-    margin-right: 45px;
+    
+    display:flex;
+    flex-direction: column;
 
 }
 .label_sale{
@@ -407,6 +410,7 @@ img{
 }
 .flashsale_list{
     display: flex;
+   
 
 }
 .flashsale_item{
@@ -644,6 +648,7 @@ img{
     position: relative;
     align-items: center;
     align-content: center;
+    padding-bottom: 4px;
 }
 .rating_box{
     width: 80px;
@@ -668,6 +673,101 @@ img{
     height: 16px;
     position: relative;
     background-color: #F1B1B0;
+ 
+}
+.container-inner{
+    padding-top: 25px;
+}
+.row{
+    display: flex;
+    content: " ";
+    
+    
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+   
+    
+
+}   
+.col-4{
+    flex-basis: 33.33333333333333%;
+    
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #cecece;
+    
+    
+}
+.col-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+.col-8{
+    flex-basis: 66.6666666666666%;
+   
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-6{
+    position: relative;
+    min-width: 1px;
+    padding-right: 15px;
+    padding-right: 15px;
+    border-color: transparent;
+    
+}
+.static-content{
+    padding-bottom: 10px;
+}
+.map::before{
+    content: "\f041";
+}   
+.envelope::before{
+    content: "\f0e0";
+}
+.phone::before{
+    content: "\f095";
+
+}
+.end{
+    display: flex;
+    justify-content: center;
+}
+
+.xem-them{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C92127;
+    border: 2px solid #c92127;
+    font-size: 14px;
+    font-weight: 700;
+    width: 210px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.fhs-asidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;  
+}
+.fhs-asidebar-tab{
+    position: absolute;
+    width: 48px;
+    
 }
 
 
