@@ -23,6 +23,7 @@ body {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .banner {
@@ -38,6 +39,10 @@ img{
 }
 div{
     display: block;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
 }
 .container{
     padding-left: 0 !important;
@@ -116,7 +121,7 @@ div{
     background-color: #C92127;
     border: 2px solid #C92127;
     position: absolute;
-    top: calc(50% - -1px);
+    top: 35px;
     right: 10px;
     transform: translate(0, -50%);
     font-size: 21px;
@@ -929,5 +934,145 @@ div{
     right: 120px;
     min-width: 251px;
 }
+.flag_dropdown{
+    padding: 6px 8px;
+
+}
+.icon_store_default{
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg) no-repeat center center;
+    
+}
+
+.flag:hover .flag_dropdown{
+    display: block;
+
+}
+.icon_store_english{
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/store/english.svg) no-repeat center center;
+}
+.menu_dropdown{
+    left: 0;
+    right: 0;
+    padding: 24px 12px 16px 12px;
+    color: #212121;
+    text-align: left;
+    min-width: 1230px;
+
+}
+.menu:hover .menu_dropdown{
+    display: block;
+}
+.fhs_stretch{
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.vertical_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+
+}
+.vertical_menu >li{
+    display: block!important;
+    width: 100%;
+    position: initial;
+    float: left;
+   
+
+}
+.aligned-left > a{
+    color: #212121;
+}
+.aligned-left  {
+    color: #212121;
+    font-weight: bold;
+    font-size: 1.23em;
+    line-height: 20px;
+    padding: 16px 12px;
+    border-radius: 8px;
+}
+.aligned-left:hover{
+    background-color:#F2F4F5;
+
+}
+.fhs_column_stretch{
+    padding-right: 12px;
+    height: 100%;
+    width: calc(100% - 292px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.fhs_center_left{
+    padding-left: 24px;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+
+}
+i{
+    font-style: italic;
+}
+.ico_sachtrongnuoc{
+    margin-right: 8px;
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_foreignbooks.svg) no-repeat center center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+.fhs_menu_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.row1{
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; 
+}
+.row1 > div{
+    margin: 8px 0 8px 0;
+    padding-right: 0;
+    padding-left: 24px;
+
+}
+.mega-col{
+    position: relative;
+    min-height: 1px;
+    width: 25%;
+    
+}
+.nav-links {
+    display: block!important;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links > li a{
+    color: #666;
+}
+.nav-links >li {
+    padding-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block!important;
+    white-space: nowrap;
+}
+.nav-links >li:hover{
+    color: #bf9a61;
+}
+
 
 
