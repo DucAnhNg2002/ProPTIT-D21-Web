@@ -1,0 +1,1231 @@
+.header .header-img p{
+    background-color:  #3e82c0;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.header .header-feature{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 68px;
+}
+.header .header-feature .fhs_right1{
+    position: relative;
+    display: flex;
+}
+.header .header-feature .fhs_right1 .icon_menu{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+}
+.header .header-feature .fhs_right1 .icon_seemore_gray{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg") no-repeat center center;
+    margin-top: 8px;
+    width: 16px;
+    height: 16px;
+}
+.catalog_menu_dropdown {
+    display: none;
+    position: absolute;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 99999;
+    white-space: nowrap;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    cursor: default;
+    margin: -2px -895px;
+    width: 1200px;
+    height:550px;
+}
+.fhs_right1:hover  .catalog_menu_dropdown{
+    display: block;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container{
+    display: flex;
+    flex-direction: row;
+    padding : 10px 10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: -10px;
+
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .header{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: #7A7E7F;
+    text-align: left;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    margin: 10px 10px;
+}
+
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item{
+    width: 100%;
+    padding: 16px 12px;
+    color: #212121;
+    font-weight: bold;
+    font-size: 1.23em;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    transition: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item li{
+    margin: 10px 10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item li:first-child{
+    margin-top:-10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .center{
+    border-left: 2px solid #646464;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item li:hover{
+    background-color: #F0F0F0;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right{
+    background-color: #fff;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content{
+    display: flex;
+    flex-direction: column;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .header_content{
+    display: flex;
+    flex-direction: row;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .header_content .icon{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_lamdepsuckhoe.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    margin: 18px 10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .header_content .title{
+    margin-top:13px;
+    margin-bottom:16px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #000;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content{
+    list-style: none;
+    text-decoration: none;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content .link{
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content .link{
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content li:hover{
+    cursor: pointer;
+}
+.fhs_mouse_point {
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.fhs_left{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.fhs_left .fhs_search >input{
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #C92127;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    width: 500px;
+    max-width: 100%;
+    height: 40px;
+    max-height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.5;
+    padding: 0 80px 0 24px;
+}
+.fhs_left .fhs_search .button_search{
+    top: calc(19% - 2px); 
+    right: 4px;
+    position: absolute;
+    font-weight: normal;
+    font-size: 21px;
+    z-index: 3;
+    width: 72px;
+    height: 30px;
+    color: #fff;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    border-radius: 8px;
+}
+.icon_search_white {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_search_white.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+    float:left;
+    transform: translate(130%, 35%);
+    margin-top: -2px;
+}
+.fhs_center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+/* NOTIFICATION */
+.fhs_center .fhs_notification_wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.fhs_center .fhs_notification_wrap .fhs_notification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fhs_center .fhs_notification_wrap .fhs_notification .fhs_notification_img{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_gray.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+}
+.fhs_center .fhs_notification_wrap .fhs_notification .fhs_notification_footer{
+    line-height: 18px;
+    color: #7A7E7F;
+    font-size: 15px;
+}
+.fhs_notification_function{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 999;
+    white-space: nowrap;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    max-width: 100vw;
+    cursor: default;
+}
+.fhs_notification_wrap:hover .fhs_notification_function {
+    display: block;
+}
+.fhs_center_left {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+.icon_nofi_black {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_black.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+.fhs_center_center {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.ico_notlogin {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/customer/ico_login.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+}
+/* CART */
+.fhs_center .fhs_cart{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+.fhs_center .fhs_cart .fhs_cart_img{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_cart_gray.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    padding-left: 35px;
+}
+.fhs_center .fhs_cart .fhs_cart_footer{
+    line-height: 18px;
+    color: #7A7E7F;
+    font-size: 15px;
+}
+/* ACCOUNT */
+.fhs_center .fhs_account_wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.fhs_center .fhs_account_wrap .fhs_account{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+.fhs_center .fhs_account_wrap .fhs_account .fhs_account_img{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_account_gray.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    padding-left: 35px;
+}
+.fhs_center .fhs_account_wrap .fhs_account .fhs_account_footer{
+    line-height: 18px;
+    color: #7A7E7F;
+    font-size: 15px;
+}
+.fhs_account_function{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 999;
+    white-space: nowrap;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    max-width: 100vw;
+    cursor: default;
+}
+.fhs_account_wrap:hover .fhs_account_function {
+    display: block;
+}
+
+.fhs_btn_default {
+    width: 100%;
+}
+.fhs_btn_default.active {
+    color: #fff;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+}
+.fhs_btn_default {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #C92127;
+    background-color: #fff;
+    border: 2px solid #C92127;
+    font-size: 14px;
+    font-weight: 700;
+    width: 210px;
+    max-width: 100%;
+    height: 40px;
+    max-height: 100%;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    transition: all 0.5s;
+    margin: 10px 10px;
+}
+.fhs_btn_default.blue.active {
+    color: #fff;
+    background-color: #1478FC;
+    border: 2px solid #1478FC;
+    margin-bottom: 20px;
+}
+.icon_facebook {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/logo/facebook_logo.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+}
+/* LANGUAGES */
+.fhs_center .fhs_languages {
+    display: flex;
+    flex-direction: row;;
+    align-items: center;
+}
+.no_hidden {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    border-radius: 11px;
+    cursor: pointer;
+    border-color: #000;
+    border-width: 2px;
+    border-color: #999;
+    border-style: solid;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 80px; */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 148px;
+    list-style: none;
+    margin-left: -11px;
+    border-radius: 8px;
+    padding: 4px 6px;
+    width: 72px;
+  }
+  
+  .dropdown-menu li {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: -7px;
+    padding: 0px 4px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    height: 34px;
+}
+   .dropdown-menu li:hover {
+    cursor: pointer;
+    background-color: #F2F4F5;
+  }
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+
+  .fhs_languages .fhs_languages_imgvn {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg") no-repeat center center;
+    background-size: contain;
+    display: block;
+    height: 24px;
+    width: 37px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    
+  }
+  .fhs_languages .fhs_languages_imgen {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/store/english.svg") no-repeat center center;
+    background-size: contain;
+    display: block;
+    height: 24px;
+    width: 37px;
+    margin: 15px 5px;
+  }
+
+  .fhs_languages .no_hidden .fhs_languages_seemore {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg") no-repeat center center;
+    background-size: contain;
+    height: 12px;
+    width: 19px;
+    padding-top: 30px;
+    display: block;
+    border-radius: 8px;
+  }
+.catalog_menu_dropdown {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 999;
+    white-space: nowrap;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    max-width: 100vw;
+    cursor: default;
+}
+#fhs_body{
+    width: 100%;
+    height: 1256px;
+    background-color: #F0F0F0 ;
+    display: flex;
+    flex-direction: column;
+}
+#fhs_body .navigation_bar {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+#fhs_body .navigation_bar .navigation_bar_container{
+    margin-left: 61px;
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+#fhs_body .navigation_bar .navigation_bar_container li{
+    display: inline;
+}
+#fhs_body .navigation_bar .navigation_bar_container .home {
+    
+}
+#fhs_body .navigation_bar .navigation_bar_container .home .a{
+    color: #262626;
+    margin-right: 0px; 
+}
+#fhs_body .navigation_bar .navigation_bar_container .beautify_health{
+    color: #F7941E;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fhs_body .main {
+    margin-left: 101px;
+    margin-right: 63px;
+    display: flex;
+    flex-direction: row;
+}
+#fhs_body .main .left{
+    background-color: #fff;
+    width: 25%;
+    height: 1200px;
+    margin-right: 15px;
+}
+#fhs_body .main .left .container{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+#fhs_body .main .left .container .group_production{
+    border-bottom: 2px solid #f6f6f6;
+    line-height: 1.6;
+}
+#fhs_body .main .left .container .group_production h5{
+    font-weight: bold;
+    font-size: 15px;
+}
+.all_category{
+    color: #666;
+    padding: 0;
+    display: inline;
+}
+#fhs_body .main .left .container .price {
+    border-bottom: 2px solid #f6f6f6;
+    cursor: pointer;
+}
+#fhs_body .main .left .container .price h5 {
+    font-weight: bold;
+    font-size: 15px;
+}
+#fhs_body .main .left .container .price .price_container {
+    list-style: none;
+    margin-top:0px;
+    line-height: 2;
+}
+#fhs_body .main .left .container .price .price_container li {
+    margin-left: -22px;
+}
+#fhs_body .main .left .container .price .price_container li:hover{
+    color: #cea015;
+    transition: color 0.5s;
+}
+#fhs_body .main .left .container .brand {
+    border-bottom: 2px solid #f6f6f6;
+    cursor: pointer;
+}
+#fhs_body .main .left .container .brand h5{
+    font-weight: bold;
+    font-size: 15px;
+}
+#fhs_body .main .left .container .brand .brand_container {
+    list-style: none;
+    margin-top:0px;
+    line-height: 2;
+}
+#fhs_body .main .left .container .brand .brand_container  li{
+    margin-left: -22px;
+}
+#fhs_body .main .left .container .brand .brand_container li:hover{
+    color: #cea015;
+    transition: color 0.5s;
+}
+#fhs_body .main .left .container .brand .seemore {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+#fhs_body .main .left .container .brand .seemore .seemore_container{
+    color: orange;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    user-select: none;
+}
+
+#fhs_body .main .left .container .suppliers {
+    border-bottom: 2px solid #f6f6f6;
+    cursor: pointer;
+}
+#fhs_body .main .left .container .suppliers h5{
+    font-weight: bold;
+    font-size: 15px;
+}
+#fhs_body .main .left .container .suppliers .suppliers_container {
+    list-style: none;
+    margin-top:0px;
+    line-height: 2;
+    padding-left: 18px;
+}
+#fhs_body .main .left .container .suppliers .brand_container  li{
+    margin-left: -22px;
+}
+#fhs_body .main .left .container .suppliers .suppliers_container li:hover{
+    color: #cea015;
+    transition: color 0.5s;
+}
+#fhs_body .main .left .container .suppliers .seemore {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+#fhs_body .main .left .container .suppliers .seemore .seemore_container{
+    color: orange;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    user-select: none;
+}
+#fhs_body .main .right {
+    background-color: #fff;
+    width: 929px;
+    height: 1200px;
+}
+#fhs_body .main .right .container{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#fhs_body .main .right .container .navigation{
+    margin-top:20px;
+    margin-left: 40px;
+}
+#fhs_body .main .right .container .navigation .navigation_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#fhs_body .main .right .container .navigation .navigation_container .header{
+    margin-right: 10px;
+}
+#fhs_body .main .right .container .navigation .navigation_container .selected_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+#fhs_body .main .right .container .navigation .navigation_container .selected_box .selected_box_container .buy{
+    border-radius: 8px;
+    padding: 10px 7px 10px 10px;
+    color: #444;
+}
+
+/* PRODUCTION OF SHOPPING TRENDS*/
+.shopping_trends_production{
+    position: relative;
+    width: 100%;
+}
+.shopping_trends_production .trend_by_day_item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 41px 15px 15px;
+    float:left;
+}
+.shopping_trends_production .trend_by_day_item .label_pro_sale{
+    position: absolute;
+    padding: 10px 1px 10px 1px;
+    margin-top: -10px;
+    border-radius: 52%;
+    background-color: orange;
+    right: 0;
+    margin: 6px 2px 4px 3px;
+
+}
+ .shopping_trends_production .trend_by_day_item .label_pro_sale .discount{
+    font-weight: bold;
+}
+ .shopping_trends_production .trend_by_day_item .box_content {
+    max-width: 200px;
+    height: auto;
+}
+.shopping_trends_production .trend_by_day_item .box_content .container_img a img{
+    max-width: 200px;
+    height: auto;
+}
+ .shopping_trends_production .trend_by_day_item .box_content .name_of_products{
+    padding-top: 0px ;
+    line-height: 1.4em;
+    word-break: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 2.8em;
+    max-height: 2.8em;
+    font-size: 0.78em;
+    color: #333333;
+}
+ .shopping_trends_production .trend_by_day_item .box_content .name_of_products >a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.shopping_trends_production .trend_by_day_item .box_content .price_label{
+    display:flex;
+    flex-direction: column;
+}
+ .shopping_trends_production .trend_by_day_item .box_content .price_label .now_price{
+    line-height: 1.65rem;
+    font-size: 1em ;
+    color: #C92127;
+    font-weight: 600;
+}
+.shopping_trends_production .trend_by_day_item .box_content .price_label .old_price{
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 14px;
+    min-height: 25px;
+    font-family: "Poppins", sans-serif;
+}
+.shopping_trends_production .trend_by_day_item .box_content .rating_container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: -9px 6px -5px 1px;
+}
+ .shopping_trends_production .trend_by_day_item .box_content .rating_container .rating_box{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_star_yellow.svg") repeat-x;
+    background-size: 16px 16px;
+    padding: 20px 69px 1px 12px;
+    margin : 13px 0px 8px -2px;
+}
+.shopping_trends_production .trend_by_day_item .box_content .rating_container .amout{
+    color: #F6A500 !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 5px 5px 0px;
+}
+.shopping_trends_production .trend_by_day_item .selledbar{
+    display: flex;
+    width: 100%;
+}
+ .shopping_trends_production .trend_by_day_item .selledbar .selledbar_inner{
+    text-align: center;
+    background-color: rgb(240, 167, 167);
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    border-radius: 23px;
+    height: 16px;
+}
+ .transition {
+    display:none;
+}
+
+.hovertext_change{
+    font-weight: bold;
+    color:orange;
+    border: 1px solid orange;
+}
+#fhs_footer{
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 92px;
+}
+/*Register and receive message */
+.register_receiveMessage{
+    margin-top:5px;
+    display: flex;
+    flex-direction: row;
+    background: #9fa7ab;
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    align-items: center;
+}
+
+.register_receiveMessage .register_receiveMessage_container {
+    display: flex;
+    flex-direction: row;
+}
+.register_receiveMessage .register_receiveMessage_container .title{
+    margin-left: 186px;
+    padding-right: 10px;
+    margin-right: 21px;
+    padding-left: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.register_receiveMessage .register_receiveMessage_container .title .content_of_title{
+    font-family: Verdana,sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    height: 20px;
+}
+.insert_email{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 8px;
+    padding-top: 0px;
+    width: 633px;
+    margin: 15px 15px 15px 15px;
+    height: 45px;
+}
+.insert_email input.input-text {
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 11px 108px;
+    border: none !important;
+    border: 1px solid #f2f2f2;
+    padding-left: 10px;
+    margin: 7px 0px 7px 4px;
+    outline: none;
+}
+.insert_email .button {
+    margin: 5px 5px 4px 5px;
+    background-color: #f89c0c;
+    border: 1px solid #f09406;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: white;
+    font-size: 13px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+/* footer content */
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding-top: 5px;
+    width: 100%;
+    padding-bottom: 12px;
+}
+.footer_content .left{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+}
+.footer_content .left .name_web{
+    margin-bottom: 8px;
+    padding: 10px 15px;
+}
+.ggplay_appstore{
+    display: flex;
+    flex-direction: row;
+}
+.ggplay_appstore .ggplay{
+    padding: 10px 10px 10px 10px;
+}
+.ggplay_appstore .appstore{
+    padding: 10px 10px 10px 10px;
+}
+.footer_content .center {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-left: 2px solid #646464;
+    height: 20px;
+    margin-bottom: 15%;
+    padding: 5px 3px 386px 5px;
+}
+.footer_content .right {
+    width: 71%;
+}
+
+.footer_content .right .grid-container {
+  margin-top: 18px;
+  display: grid;
+  grid-template-rows: 1fr repeat(5, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    padding: 10px;
+    border: none;
+    display: block;
+    position: relative;
+    font-size: 13px;
+    align-items: center;
+}
+.grid-item:hover a {
+    padding-left: 15px;
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/ma_vanesa2/images/icon-footer.png") no-repeat 0 9px ;
+    color: rgb(190, 29, 134) !important;
+    transition: all 300ms ease-in 0s;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+.bold-row {
+  font-weight: bold;
+  font-size: 20px;
+}
+.col-md-4 {
+    width: 33.33333333333333%;
+    float: left;
+    font-size:13px;
+    padding-left:13px;
+}
+.footer_content .right .footer-img-container_grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-rows: 1fr repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+.fhs_footer_container .certification {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding-top: 5px;
+    width: 100%;
+    font-size: 13px;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    color: #adadad;
+    padding-bottom: 0px;
+}
+/* LIVE CHAT */
+#cs-live-chat{
+    position: fixed; 
+    background: transparent; 
+    z-index: 999999999; 
+    transition-duration: 200ms; 
+    transition-timing-function: 
+    cubic-bezier(0.645, 0.045, 0.355, 1); 
+    transition-property: bottom, transform;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px; 
+    border-radius: 50%; cursor: pointer; bottom: 0px; 
+    overflow: hidden; 
+    width: 60px;
+    height: 60px; 
+    right: 0px; 
+    left: auto; 
+    margin: 20px;
+}
+#cs_chat_iframe{
+    border: 0px none transparent; 
+    height: 100%; 
+    width: 100%; 
+    display: none;
+}
+/* SIDE BAR */
+#sidebar{
+    height: 100px;
+    width: 50px;
+    top: 200px;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    background-color: #7A7E7F;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#sidebar .sidebar_container{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+#sidebar .sidebar_container li{
+    display: flex;
+    padding: 9px 9px;
+    margin-right:0px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#sidebar .sidebar_container li:hover{
+    background-color: #C92127;
+}
+#menu_of_sidebar{
+    background-color: #fff;
+    height: 712px;
+    width: 400px;
+    top: 200px;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px #6c6c78;
+    display: none;
+    margin-top:-200px;
+    overflow-y: scroll;
+}
+#menu_of_sidebar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    padding:5px 5px;
+    margin-bottom:70px;
+}
+#menu_of_sidebar .container .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F4F5;
+    cursor: pointer;
+}
+#menu_of_sidebar .container .item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#menu_of_sidebar .container .item .container_img{
+    display: flex;
+    padding: 10px 10px;
+}
+#menu_of_sidebar .container .item .container_img .product-image{
+    text-decoration: none;
+    display: block;
+}
+#menu_of_sidebar .container .item .container_img .product-image >img{
+    height: auto;
+    width: 200px;
+}
+#menu_of_sidebar .container .item .container_word{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+}
+#menu_of_sidebar .container .item .container_word h2{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+#menu_of_sidebar .container .item .container_word .fhs-series >a{
+    line-height: 1.3em;
+    min-height: 2em;
+    max-height: 2em;
+    font-weight: 550;
+    margin-bottom: 4px;
+    text-decoration: none;
+      display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+#menu_of_sidebar .seemore {
+    background-color: #fff;
+    height: 70px;
+    width: 450px;
+    position: fixed;
+    z-index: 30;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#menu_of_sidebar .seemore button{
+    display: flex;
+    justify-content: center;
+    color: #C92127;
+    border: 2px solid #C92127;
+    padding: 6px;
+    width: 160px;
+    font-size: 1em;
+    font-weight: 700;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 6px hsl(0, 0%, 90%);
+    -moz-box-shadow: 0px 4px 6px hsl(0, 0%, 90%);
+    -webkit-box-shadow: 0px 4px 6px hsl(0, 0%, 90%);
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+#menu_of_sidebar .seemore button:hover{
+    transform: scale(1.1);
+}
+.fhs-series-label {
+    height: 1.8em;
+    width: 1.8em;
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.fhs-series-episode-label {
+    font-size: 1em;
+    padding-top: 10px;
+}
+.fhs-series-subscribes {
+    color: #2F80ED;
+    font-size: 1em;
+}
+.fhs-series-label > i {
+    position: absolute;
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/label_Bo.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -0.1em;
+}
+
+.trend_by_day_item:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.fhs_nowrap_two:hover {
+    color: red;
+}

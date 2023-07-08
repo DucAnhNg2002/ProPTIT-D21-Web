@@ -1,0 +1,1857 @@
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.header .header-img p{
+    background-color:  #3e82c0;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.header .header-feature{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 68px;
+}
+.header .header-feature .fhs_right1{
+    position: relative;
+    display: flex;
+}
+.header .header-feature .fhs_right1 .icon_menu{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+}
+.header .header-feature .fhs_right1 .icon_seemore_gray{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg") no-repeat center center;
+    margin-top: 8px;
+    width: 16px;
+    height: 16px;
+}
+.catalog_menu_dropdown {
+    display: none;
+    position: absolute;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 99999;
+    white-space: nowrap;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    cursor: default;
+    margin: -2px -895px;
+    width: 1200px;
+    height:550px;
+}
+.fhs_right1:hover  .catalog_menu_dropdown{
+    display: block;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container{
+    display: flex;
+    flex-direction: row;
+    padding : 10px 10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: -10px;
+
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .header{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: #7A7E7F;
+    text-align: left;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    margin: 10px 10px;
+}
+
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item{
+    width: 100%;
+    padding: 16px 12px;
+    color: #212121;
+    font-weight: bold;
+    font-size: 1.23em;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    transition: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item li{
+    margin: 10px 10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item li:first-child{
+    margin-top:-10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .center{
+    border-left: 2px solid #646464;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .left .item li:hover{
+    background-color: #F0F0F0;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right{
+    background-color: #fff;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content{
+    display: flex;
+    flex-direction: column;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .header_content{
+    display: flex;
+    flex-direction: row;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .header_content .icon{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_lamdepsuckhoe.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    margin: 18px 10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .header_content .title{
+    margin-top:13px;
+    margin-bottom:16px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #000;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content{
+    list-style: none;
+    text-decoration: none;
+    padding-left:10px;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content .link{
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content .link{
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.catalog_menu_dropdown .catalog_menu_dropdown_container .right .content .body_content li:hover{
+    cursor: pointer;
+}
+.fhs_mouse_point {
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.fhs_left{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.fhs_left .fhs_search >input{
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #C92127;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    width: 500px;
+    max-width: 100%;
+    height: 40px;
+    max-height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.5;
+    padding: 0 80px 0 24px;
+}
+.fhs_left .fhs_search .button_search{
+    top: calc(19% - 2px); 
+    right: 4px;
+    position: absolute;
+    font-weight: normal;
+    font-size: 21px;
+    z-index: 3;
+    width: 72px;
+    height: 30px;
+    color: #fff;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    border-radius: 8px;
+}
+.icon_search_white {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_search_white.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+    float:left;
+    transform: translate(130%, 35%);
+    margin-top: -2px;
+}
+.fhs_center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+/* NOTIFICATION */
+.fhs_center .fhs_notification_wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.fhs_center .fhs_notification_wrap .fhs_notification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fhs_center .fhs_notification_wrap .fhs_notification .fhs_notification_img{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_gray.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+}
+.fhs_center .fhs_notification_wrap .fhs_notification .fhs_notification_footer{
+    line-height: 18px;
+    color: #7A7E7F;
+    font-size: 15px;
+}
+.fhs_notification_function{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 999;
+    white-space: nowrap;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    max-width: 100vw;
+    cursor: default;
+}
+.fhs_notification_wrap:hover .fhs_notification_function {
+    display: block;
+}
+.fhs_center_left {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+.icon_nofi_black {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_black.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+.fhs_center_center {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.ico_notlogin {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/customer/ico_login.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+}
+/* CART */
+.fhs_center .fhs_cart{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+.fhs_center .fhs_cart .fhs_cart_img{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_cart_gray.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    padding-left: 35px;
+}
+.fhs_center .fhs_cart .fhs_cart_footer{
+    line-height: 18px;
+    color: #7A7E7F;
+    font-size: 15px;
+}
+/* ACCOUNT */
+.fhs_center .fhs_account_wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.fhs_center .fhs_account_wrap .fhs_account{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+.fhs_center .fhs_account_wrap .fhs_account .fhs_account_img{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_account_gray.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    padding-left: 35px;
+}
+.fhs_center .fhs_account_wrap .fhs_account .fhs_account_footer{
+    line-height: 18px;
+    color: #7A7E7F;
+    font-size: 15px;
+}
+.fhs_account_function{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 999;
+    white-space: nowrap;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    max-width: 100vw;
+    cursor: default;
+}
+.fhs_account_wrap:hover .fhs_account_function {
+    display: block;
+}
+
+.fhs_btn_default {
+    width: 100%;
+}
+.fhs_btn_default.active {
+    color: #fff;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+}
+.fhs_btn_default {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #C92127;
+    background-color: #fff;
+    border: 2px solid #C92127;
+    font-size: 14px;
+    font-weight: 700;
+    width: 210px;
+    max-width: 100%;
+    height: 40px;
+    max-height: 100%;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    transition: all 0.5s;
+    margin: 10px 10px;
+}
+.fhs_btn_default.blue.active {
+    color: #fff;
+    background-color: #1478FC;
+    border: 2px solid #1478FC;
+    margin-bottom: 20px;
+}
+.icon_facebook {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/logo/facebook_logo.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+}
+/* LANGUAGES */
+.fhs_center .fhs_languages {
+    display: flex;
+    flex-direction: row;;
+    align-items: center;
+}
+.no_hidden {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    border-radius: 11px;
+    cursor: pointer;
+    border-color: #000;
+    border-width: 2px;
+    border-color: #999;
+    border-style: solid;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 80px; */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 148px;
+    list-style: none;
+    margin-left: -11px;
+    border-radius: 8px;
+    padding: 4px 6px;
+    width: 72px;
+  }
+  
+  .dropdown-menu li {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: -7px;
+    padding: 0px 4px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    height: 34px;
+}
+   .dropdown-menu li:hover {
+    cursor: pointer;
+    background-color: #F2F4F5;
+  }
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+
+  .fhs_languages .fhs_languages_imgvn {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg") no-repeat center center;
+    background-size: contain;
+    display: block;
+    height: 24px;
+    width: 37px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    
+  }
+  .fhs_languages .fhs_languages_imgen {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/store/english.svg") no-repeat center center;
+    background-size: contain;
+    display: block;
+    height: 24px;
+    width: 37px;
+    margin: 15px 5px;
+  }
+
+  .fhs_languages .no_hidden .fhs_languages_seemore {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg") no-repeat center center;
+    background-size: contain;
+    height: 12px;
+    width: 19px;
+    padding-top: 30px;
+    display: block;
+    border-radius: 8px;
+  }
+.catalog_menu_dropdown {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: white;
+    z-index: 999;
+    white-space: nowrap;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    -moz-box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    max-width: 100vw;
+    cursor: default;
+}
+/* FHS HEADER BACKGROUND */
+.fhs_header_background{
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fhs_top_banner {
+    margin-top: 16px;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 337px;
+    gap: 15px;
+}
+.fhs_top_banner .swiper-button .swiper-btn-banner {
+    background-color: #ffff;
+    opacity: 1;
+    border-radius: 55%;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 2px 8px #00000029;
+    z-index: 10;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.mySlides {
+    display:none;
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer;
+}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0;
+}
+.w3-display-container{
+    position:relative
+}
+.w3-border{
+    border:1px solid #ccc!important;
+}
+.w3-transparent{
+    background-color:transparent!important;
+}
+.w3-hover-white:hover{
+    color:#000!important;
+    background-color:#fff!important;
+}
+.w3-hover-text-khaki:hover{
+    color:#b4aa50!important;
+}
+.w3-support{
+    text-align:center!important;
+    padding:0.01em 16px;
+    margin-top:16px!important;
+    margin-bottom:16px!important;
+    font-size:18px!important;
+    color:#fff!important;
+    position:absolute;
+    left:52.4%;
+    bottom:-14px;
+    transform:translate(-48%,0%);
+    -ms-transform:translate(-48%,0%);
+}
+.border_radius_normal {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+.ico_arrow_gray.right {
+    transform: rotate(-180deg);
+}
+.ico_arrow_gray {
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_arrow_gray.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 14.4px;
+    width: 14.4px;
+}
+.swiper-button2-prev {
+    position: absolute;
+    left: -29px;
+    top: -140px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.swiper-btn-banner {
+    background-color: #ffff;
+    opacity: 1;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 2px 8px #00000029;
+    z-index: 10;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.fhs_center_center {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.fhs_top_banner .swiper-button2-next {
+    position: absolute;
+    right: 6px;
+    top: -129px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.fhs_header_background .container .container_inner .fhs_top_banner .w3-content img{
+    border-radius: 13px 13px 13px 13px;
+    height: 319px;
+    padding-left: 41px;
+}
+/* MAIN */
+.main_container {
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+}
+.main_container .fhs_start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+.main_container .fhs_start .fhs_homebanner{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.main_container .fhs_start .fhs_homebanner .fhs_4items{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.main_container .fhs_start .fhs_homebanner .fhs_4items .fhs_4item_inner{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 21.6vw;
+    height: auto;
+}
+.main_container .fhs_start  .fhs_row_icon_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding-bottom: 10px;
+    margin-right: 200px;
+    margin-left: 200px;
+    width: 86.5%;
+    gap:15.5px;
+}
+.main_container .fhs_start .fhs_row_icon_menu .fhs_icon_menu_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.65%;
+}
+.main_container .fhs_start .fhs_row_icon_menu .fhs_icon_menu_item .center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.main_container .fhs_start .fhs_row_icon_menu .fhs_icon_menu_item .center img{
+    width: 45px;
+    height: 45px;
+}
+/* DANH MỤC SẢN PHẨM */
+.main_container .list_of_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    margin-top: 18px;
+    margin-left: 6.7vw;
+    margin-right: 6.7vw;
+    -moz-border-top-left-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+.main_container .list_of_products .list_of_products_header {
+    display: flex;
+    border-bottom: 2px solid  #e8e8e8;
+    transition: box-shadow 0.3s ease;
+    margin-left: 20px;
+    width: 100%;
+}
+.main_container .list_of_products .list_of_products_header .center{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 11px 14px 11px 2px;
+}
+.main_container .list_of_products .list_of_products_header .center .icon_category{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu_red.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 32px;
+    width: 32px;
+}
+.main_container .list_of_products .list_of_products_header .center .tittle{
+    font-size: 17px;
+    color: #1F1D1D;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+.main_container .list_of_products .production {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.main_container .list_of_products .production .center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 83vw;
+}
+.main_container .list_of_products .production .center a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+.main_container .list_of_products .production .center a >div{
+    padding-top: 0px;
+    line-height: 1.4em;
+    word-break: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 2.8em;
+    max-height: 2.8em;
+    font-size: 0.9em;
+}
+/*XU HƯỚNG MUA SẮM */
+.main_container .shopping_trends{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    background-color: #fff;
+    margin-top: 18px;
+    margin-left: 6.7vw;
+    margin-right: 6.7vw;
+    -moz-border-top-left-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+.main_container .shopping_trends .shopping_trends_header{
+    background-color: #FCDDEF;
+    width: 100%;
+}
+.main_container .shopping_trends .shopping_trends_header .center{
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+}
+.main_container .shopping_trends .shopping_trends_header .center .icon_shopping_trends{
+    background: url("https://cdn0.fahasa.com/skin/frontend/base/default/images/ico_dealhot.png") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 32px;
+    width: 32px;
+
+}
+.main_container .shopping_trends .shopping_trends_header .center .title_shopping_trends{
+    font-size: 17px;
+    color: #1F1D1D;
+    font-weight: 550;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.main_container .shopping_trends .shopping_trends_choice{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid  #e8e8e8;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+.main_container .shopping_trends .shopping_trends_choice .center{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 4px 15px 4px 15px;
+    background-color:#fff;
+    list-style-type: none;
+    height: 5rem;
+}
+.main_container .shopping_trends .shopping_trends_choice .center li{
+    margin: -3px 12px 0px 10px;
+    border-radius: 5px;
+    padding: 6px 6px 6px 6px;
+}
+.main_container .shopping_trends .shopping_trends_choice .center li:hover{
+    background-color: white;
+    color: #F7931E;
+    border: 2px solid  #F7931E;
+    transition: box-shadow 0.3s ease;
+}
+/* PRODUCTION OF SHOPPING TRENDS*/
+.main_container .shopping_trends .all .shopping_trends_production{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 26.4px 15px 26.4px;
+    float:left;
+    width: 20%;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .label_pro_sale{
+    position: absolute;
+    padding: 10px 1px 10px 1px;
+    margin-top: -10px;
+    border-radius: 52%;
+    background-color: orange;
+    right: 0;
+    margin: 6px 2px 4px 3px;
+
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .label_pro_sale .discount{
+    font-weight: bold;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content {
+    max-width: 200px;
+    height: auto;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .container_img a img{
+    max-width: 200px;
+    height: auto;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .name_of_products{
+    padding-top: 0px ;
+    line-height: 1.4em;
+    word-break: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 2.8em;
+    max-height: 2.8em;
+    font-size: 0.78em;
+    color: #333333;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .name_of_products >a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .price_label{
+    display:flex;
+    flex-direction: column;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .price_label .now_price{
+    line-height: 1.65rem;
+    font-size: 1em ;
+    color: #C92127;
+    font-weight: 600;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .price_label .old_price{
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 14px;
+    min-height: 25px;
+    font-family: "Poppins", sans-serif;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .rating_container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: -9px 6px -5px 1px;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .rating_container .rating_box{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_star_gray.svg") repeat-x;
+    background-size: 16px 16px;
+    padding: 20px 69px 1px 12px;
+    margin : 13px 0px 8px -2px;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .rating_container .amout{
+    color: #F6A500 !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 5px 5px 0px;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .selledbar{
+    display: flex;
+    width: 100%;
+}
+.main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .selledbar .selledbar_inner{
+    text-align: center;
+    background-color: rgb(240, 167, 167);
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    border-radius: 23px;
+    height: 16px;
+}
+.main_container .shopping_trends .all .transition {
+    display:none;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+}
+.hovertext_change{
+    font-weight: bold;
+    color:orange;
+    border: 1px solid orange;
+}
+/* SEEMORE */
+.main_container .shopping_trends .all .seemore_footer {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 80px;
+}
+.main_container .shopping_trends .all  .seemore_footer .seemore_footer_container {
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+.main_container .shopping_trends .all  .seemore_footer .seemore_footer_container .button_seemore{
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #C92127;
+    background-color: #fff;
+    border: 2px solid #C92127;
+    font-size: 14px;
+    font-weight: 700;
+    width: 210px;
+    max-width: 100%;
+    height: 40px;
+    max-height: 100%;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.main_container .shopping_trends .all  .seemore_footer .seemore_footer_container .button_seemore a{
+    text-decoration: none;
+}
+/*FLASH SALE*/
+.main_container .container {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 6.7vw 15px 6.7vw;
+}
+.main_container .container .flash_sale_header{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    background-color: #FCDAB0;
+    width: 100%;
+    padding: 10px 0px 8px 14px;
+    margin: 7px 14px 7px 0px;
+}
+.main_container .container .flash_sale_header .icon_flash_sale{
+    margin-left: 0px;
+        -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 32px;
+    width: 32px;
+    margin-top:-2px;
+}
+.container .flash_sale_header .title_flash_sale{
+    font-size: 17px;
+    color: #1F1D1D;
+    font-weight: 550;
+    text-transform: uppercase;
+    margin: 5px 5px 5px 5px;
+}
+.container .flash_sale_header .split {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-left: 2px solid #646464;
+    height: 20px;
+    margin-bottom: 4px;
+    padding: 5px 0px 17px 5px;
+}
+
+.flashsale-page-countdown-label {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #000;
+    margin-right: 10px;
+}
+.flashsale-countdown {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 5px;
+    /* width: 150px; */
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.flashsale-countdown-number {
+    padding: 4px 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.container .row .col-md-12:hover{
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.container .row .col-md-12 .flash_sale_item{
+    height: 340px;
+    width: calc(100%/3);
+    object-fit: cover;
+}
+.container .row .col-md-12 .flash_sale_item .label_pro_sale{
+    position: absolute;
+    padding: 10px 1px 10px 1px;
+    margin-top: -10px;
+    border-radius: 52%;
+    background-color: orange;
+    right: 0;
+    margin: 6px 25px 4px 3px;
+}
+.container .row .col-md-12 .flash_sale_item .box_content {
+    max-width: 200px;
+    height: auto;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .container_img a img{
+    max-width: 200px;
+    height: auto;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .name_of_products{
+    padding-top: 0px ;
+    line-height: 1.4em;
+    word-break: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 2.8em;
+    max-height: 2.8em;
+    font-size: 0.9em;
+    color: #514949;
+    width: 234%;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .price_label{
+    display:flex;
+    flex-direction: column;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .price_label .now_price{
+    line-height: 1.65rem;
+    font-size: 1em ;
+    color: #F7941E;
+    font-weight: 600;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .price_label .old_price{
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 14px;
+    min-height: 25px;
+    font-family: "Poppins", sans-serif;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .rating_container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: -9px 6px -5px 1px;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .rating_container .rating_box{
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_star_gray.svg") repeat-x;
+    background-size: 16px 16px;
+    padding: 20px 69px 1px 12px;
+    margin : 13px 0px 8px -2px;
+}
+.container .row .col-md-12 .flash_sale_item .box_content .rating_container .amout{
+    color: #F6A500 !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 5px 5px 0px;
+}
+.container .row .col-md-12 .flash_sale_item .selledbar{
+    display: flex;
+    width: 100%;
+}
+.container .row .col-md-12 .flash_sale_item .selledbar .selledbar_inner{
+    text-align: center;
+    background-color: rgb(240, 167, 167);
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    border-radius: 23px;
+    height: 16px;
+}
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    width: 199px;
+    height: 18px;
+    font-size: 17px;
+    background-color: rgba(210, 33, 33, 0.4);
+    border-radius: 1.5em;
+    background: linear-gradient(90deg, #D22121 100%, #f1b5b5 0%);
+}
+.progress-bar .progress-value{
+    color: #ffffff;
+    font-size: 13px;
+    margin-left: 66px;
+}
+.progress-bar .progress-bar-contain{
+    font-size: 13px;
+    margin-left: 66px;
+}
+.slick-slider .slick-list, .slick-slider .slick-track {
+    background-color: #fff;
+    padding-top: 9px;
+    margin-top: -6px;
+}
+.tabs-xem-them {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+    background-color: #fff;
+    padding-top: 22px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-bottom: 22px;
+}
+.xem-them-item-aaa a {
+    box-shadow: 2px 3px 5px #ccc;
+    font-size: 14px;
+    color: #fff!important;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    width: 220px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #ff9800, #F7695D);
+    transition: transform .2s;
+}
+.slick-next:before, .slick-prev:before {
+    font-size: 34px !important;
+    padding-left:0px;
+    display: inline-block;
+    overflow: hidden;
+    width: 37px;
+    height: 30px;
+    text-align: center;
+    filter: brightness(0%);
+    margin-left: -8px;
+}
+.slick-next.slick-disabled::before, .slick-prev.slick-disabled::before {
+    opacity: -11.75 !important;
+}
+ .slick-prev:before {
+    margin-left: -9px;
+}
+/* LIVE CHAT */
+#cs-live-chat{
+    position: fixed; 
+    background: transparent; 
+    z-index: 999999999; 
+    transition-duration: 200ms; 
+    transition-timing-function: 
+    cubic-bezier(0.645, 0.045, 0.355, 1); 
+    transition-property: bottom, transform;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px; 
+    border-radius: 50%; cursor: pointer; bottom: 0px; 
+    overflow: hidden; 
+    width: 60px;
+    height: 60px; 
+    right: 0px; 
+    left: auto; 
+    margin: 20px;
+}
+#cs_chat_iframe{
+    border: 0px none transparent; 
+    height: 100%; 
+    width: 100%; 
+    display: none;
+}
+/* FOOTER */
+#fhs_footer{
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.fhs_footer .fhs_footer_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background: #F0F0F0;
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: auto;
+}
+
+.fhs_footer .fhs_footer_container .brand{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #fff;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: auto;
+    max-width: 3000px;
+}
+.fhs_footer .fhs_footer_container .brand i{
+    position: absolute;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 46px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.fhs_footer .fhs_footer_container .brand i:hover{
+    background: #f2f2f2;
+}
+.brand i:first-child{
+    left: -23px;
+    display: none;
+}
+.brand i:last-child{
+    right: -23px;
+}
+.brand .brand_container{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-top:15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+.brand_container .dragging{
+    cursor: grab;
+    scroll-behavior: smooth;
+}
+.brand_container.dragging .img{
+    pointer-events: none;
+}
+.brand_container img{
+   object-fit: cover;
+   user-select: none;
+   width: 10.75%;
+   height: auto;
+}
+.brand_container img:first-child{
+    margin-left: 0px;
+ }
+ /*Register and receive message */
+.register_receiveMessage{
+    margin-top:5px;
+    display: flex;
+    flex-direction: row;
+    background: #9fa7ab;
+    height: 70px;
+    margin-top: 30px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.register_receiveMessage .register_receiveMessage_container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+.register_receiveMessage .register_receiveMessage_container .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    width: 40%;
+}
+.register_receiveMessage .register_receiveMessage_container .title .content_of_title{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: Verdana,sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    height: 20px;
+}
+.insert_email{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 8px;
+    padding-top: 0px;
+    width: 633px;
+    margin: 15px 15px 15px 15px;
+    height: 45px;
+}
+.insert_email input.input-text {
+    display: block;
+    width: 88%;
+    border: none;
+    background: none;
+    padding: 11px 108px;
+    border: none !important;
+    border: 1px solid #f2f2f2;
+    padding-left: 10px;
+    margin: 7px 0px 7px 4px;
+    outline: none;
+}
+.insert_email .button {
+    width: 150px;
+    margin: 5px 5px 4px 5px;
+    background-color: #f89c0c;
+    border: 1px solid #f09406;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: white;
+    font-size: 13px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer content */
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.footer_content .container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+.footer_content .container .left{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+}
+.footer_content .container .left .name_web{
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.footer_content .container .left .name_web img{
+    width: 23vw;
+}
+.ggplay_appstore{
+    display: flex;
+    flex-direction: row;
+}
+.ggplay_appstore .ggplay{
+    padding: 10px 10px 10px 10px;
+}
+.ggplay_appstore .appstore{
+    padding: 10px 10px 10px 10px;
+}
+.footer_content .container .center {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-left: 2px solid #646464;
+    height: 20px;
+    margin-bottom: 15%;
+    padding: 5px 3px 386px 5px;
+    width: 3%;
+}
+.footer_content .container .right {
+    width: 67%;
+}
+
+.footer_content .container .right .grid-container {
+  margin-top: 18px;
+  display: grid;
+  grid-template-rows: 1fr repeat(5, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  padding: 10px;
+  border: none;
+  display: block;
+  position: relative;
+  font-size: 13px;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+.grid-item:hover a {
+    padding-left: 15px;
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/ma_vanesa2/images/icon-footer.png") no-repeat 0 9px ;
+    color: rgb(190, 29, 134) !important;
+    transition: all 300ms ease-in 0s;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+.bold-row {
+  font-weight: bold;
+  font-size: 20px;
+}
+.col-md-4 {
+    width: 33.33333333333333%;
+    float: left;
+    font-size:13px;
+    padding-left:13px;
+}
+.footer_content .container .right .footer-img-container_grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-rows: 1fr repeat(2, auto);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: center;
+  }
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+.fhs_footer_container .certification {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding-top: 5px;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #adadad;
+    padding-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.fhs_footer_container .certification p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+}
+/* SIDE BAR */
+#sidebar{
+    height: 100px;
+    width: 50px;
+    top: 200px;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    background-color: #7A7E7F;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#sidebar .sidebar_container{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+#sidebar .sidebar_container li{
+    display: flex;
+    padding: 9px 9px;
+    margin-right:0px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#sidebar .sidebar_container li:hover{
+    background-color: #C92127;
+}
+#menu_of_sidebar{
+    background-color: #fff;
+    height: 712px;
+    width: 400px;
+    top: 200px;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px #6c6c78;
+    display: none;
+    margin-top:-200px;
+    overflow-y: scroll;
+}
+#menu_of_sidebar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    padding:5px 5px;
+    margin-bottom:70px;
+}
+#menu_of_sidebar .container .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F4F5;
+    cursor: pointer;
+}
+#menu_of_sidebar .container .item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#menu_of_sidebar .container .item .container_img{
+    display: flex;
+    padding: 10px 10px;
+}
+#menu_of_sidebar .container .item .container_img .product-image{
+    text-decoration: none;
+    display: block;
+}
+#menu_of_sidebar .container .item .container_img .product-image >img{
+    height: auto;
+    width: 200px;
+}
+#menu_of_sidebar .container .item .container_word{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+}
+#menu_of_sidebar .container .item .container_word h2{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+#menu_of_sidebar .container .item .container_word .fhs-series >a{
+    line-height: 1.3em;
+    min-height: 2em;
+    max-height: 2em;
+    font-weight: 550;
+    margin-bottom: 4px;
+    text-decoration: none;
+      display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+#menu_of_sidebar .seemore {
+    background-color: #fff;
+    height: 70px;
+    width: 450px;
+    position: fixed;
+    z-index: 30;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#menu_of_sidebar .seemore button{
+    display: flex;
+    justify-content: center;
+    color: #C92127;
+    border: 2px solid #C92127;
+    padding: 6px;
+    width: 160px;
+    font-size: 1em;
+    font-weight: 700;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 6px hsl(0, 0%, 90%);
+    -moz-box-shadow: 0px 4px 6px hsl(0, 0%, 90%);
+    -webkit-box-shadow: 0px 4px 6px hsl(0, 0%, 90%);
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+#menu_of_sidebar .seemore button:hover{
+    transform: scale(1.1);
+}
+.fhs-series-label {
+    height: 1.8em;
+    width: 1.8em;
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.fhs-series-episode-label {
+    font-size: 1em;
+    padding-top: 10px;
+}
+.fhs-series-subscribes {
+    color: #2F80ED;
+    font-size: 1em;
+}
+.fhs-series-label > i {
+    position: absolute;
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/label_Bo.svg") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -0.1em;
+}
+
+.trend_by_day_item:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.fhs_nowrap_two:hover {
+    color: red;
+}
+/* RESPONSIVE */
+@media only screen and (max-width:1200px){
+    .header-feature{
+        padding: 0px 39px;
+    }
+    .main_container{
+        width: 100%;
+    }
+    .fhs_start{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .fhs_top_banner{
+        flex-direction: column;
+    }
+    .w3-content img{
+        margin-left: -30px;
+    }
+    .vnpay_pnj{
+        display: none;
+    }
+    .fhs_homebanner{
+    }
+    .fhs_4item_inner img{
+        width: 100%;
+    }
+    .fhs_row_icon_menu{
+        margin-right: 5px;
+    }
+    .fhs_icon_menu_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slick-dots{
+        display: none;   
+    }
+}
+.header-img img {
+    max-width: 100%;
+    height: auto;
+}
+.header .header-feature{
+    max-width: 100%;
+}
+@media only screen and (max-width:1024px){
+    .fhs_icon_menu_item{
+        padding-top: 0px;
+        line-height: 1.4em;
+        word-break: break-word;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        min-height: 2.8em;
+    }
+    .main_container .shopping_trends .all .shopping_trends_production .trend_by_day_item .box_content .container_img a img {
+        max-width: 142px;
+        height: auto;
+    }
+    .fhs_footer .fhs_footer_container {
+        width: 105vw;
+    }
+    .slick-initialized .slick-dots {
+        display: none;
+    }
+    .tabs-xem-them {
+        margin-top: -30px;
+        z-index: 1;
+    }
+    .col-md-12{
+        margin-right: 10px;
+    }
+}
