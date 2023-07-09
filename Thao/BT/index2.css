@@ -92,15 +92,59 @@ img{
 @media (min-width: 768px){
 .container {
     width: 750px;
-}}
+}
+.col-main{
+    width: 100%;
+}
+.child-banner{
+    width: 50%;
+    float: left;
+}
+.toolbar{
+    overflow: hidden; 
+    margin: 0 0 0px;
+    position: relative;
+    background: #2d2d2d;
+    padding: 13px 15px;
+    width: 100%;
+    float: left;
+}
+.sorter{
+    width: 33.33333333333333%;
+    float: left;
+}
+}
 @media(min-width:992px){
     .container{
         width: 970px;
     }
+    .col-main{
+        float: left;
+        width: 75%;
+    }
+    .block-item{
+        width: 16.666666666666664%;
+        float: left;
+    }
+    .child-banner{
+        width: 50%;
+        float: left;
+    }
+    .toolbar{
+        width: 100%;
+    }
+    .sorter{
+        width: 33.33333333333333%;
+    }
+  
 }
 @media(min-width:1200px){
     .container{
         width: 1230px;
+    }
+    .col-main{
+        float: left;
+        width: 75%;
     }
 }
 @media(min-width:1280px){
@@ -485,6 +529,101 @@ ul,ol{
     user-select: none;
     background: url(https://cdn0.fahasa.com/skin/frontend/base/default/images/manapro_filtercheckboxes/ico_uncheck.png) 0 50% no-repeat;
 }
+.col-main,.child-banner{
+    background-color: white;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.mb-content{
+    padding-top: 15px;   
+}
+.block-item{
+    padding: 0!important;
+    margin-right: 10px;
+}
+.banner-home-inner{
+    margin-bottom: 0px;
+    margin-top: 16px;
+    text-align: center;
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+    order: 0;
+    vertical-align: top;
+    height: auto;
+}
+.category-product{
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.toolbar{
+    padding-top: 15px;
+    border-bottom: 1px solid #ecebeb;
+    padding-left: 0px;
+    background: white !important;
+    min-height: 50px;
+}
+.toolbar .sorter{
+    padding-left: 20px;
+    padding-top: 2px;
+    float: left;
+    padding-right: 15px;
+    position: relative;
+}
+p{
+    margin: 0 0 10px;
+}
+.toolbar-top{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sort-by{
+    padding: 0;
+    display: block;
+    float: left;
+    margin: 0;
+    font-size: 12px;
+    flex: 2;
+    height: 40px;
+    width: 100%;
+}
+.selectbox{
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    text-align: left;
+    line-height: 30px;
+    clear: both;
+    color: #444;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.selectbox option{
+    display: block;
+    line-height: 20px;
+    padding: 5px ;
+    color: #444;
+    margin-bottom: 5px;
+}
+.selectbox option:hover{
+    background-color:blueviolet;
+}
+.pager{
+    
+}
+
+
+
 
 
 
