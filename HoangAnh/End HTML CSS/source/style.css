@@ -1788,6 +1788,11 @@ h3 {
 .main-container-HTDT > .top-banner > a > img {
     width: 100vw;
 }
+.menu-icon-bar-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
 .branch-address-container {
     background-color: #F0F0F0;
 }
@@ -2029,6 +2034,15 @@ h3 {
     .desktop-only {
         display: none;
     }
+    .episode-label {
+        display: none;
+    }
+    .trending-button-xemthem a {
+        padding: 10px 6vw;
+    }
+    .flash-sale-see-more-button a {
+        width: 15vw;
+    }
 }
 @media (max-width: 481px) {
     .fhs-infor > .row > .col-md-8 > div:first-of-type {
@@ -2039,6 +2053,12 @@ h3 {
     }
     .fhs-infor > .row > .col-md-8 > div:nth-child(2) {
         display: none;
+    }
+    .product-price-special {
+        font-size: 0.8em;
+    }
+    .product-price-old {
+        font-size: 0.75em;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2085,6 +2105,17 @@ h3 {
         width: 100vw;
     }
     .coupon-row {
+        display: none;
+    }
+    .menu-icon-bar-grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+    .discount-box-red {
+        display: none;
+    }
+    .product-rating {
         display: none;
     }
 }
