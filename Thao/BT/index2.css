@@ -786,6 +786,36 @@ p{
     background: white !important;
     min-height: 50px;
 }
+.thao ,.thao1{
+    padding: 0;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    line-height: 40px;
+    color: black;
+    cursor: pointer;
+      width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 2px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.icon{
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/ma_vanesa2/images/right_orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 15px;
+}
+.thao1:hover{
+    background: #FCDAB0;
+    border-radius: 5px;
+}
+
+
 
 
 
