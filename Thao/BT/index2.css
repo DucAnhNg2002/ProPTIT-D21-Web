@@ -117,6 +117,10 @@ img{
     width: 66.66666666666666%;
     float: left;
 }
+.bottom{
+    padding: 13px 15px;
+    position: relative;
+}
 }
 @media(min-width:992px){
     .container{
@@ -142,6 +146,10 @@ img{
     }
     .pager{
         width: 66.66666666666666%;
+        float: left;
+    }
+    .bottom{
+        width: 100%;
         float: left;
     }
   
@@ -766,6 +774,17 @@ p{
     
     position: relative;
     background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_star_gray.svg) repeat-x;
+}
+.amount{
+    color: #F6A500 !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+.bottom{
+    margin: 0;
+    padding-left: 0px;
+    background: white !important;
+    min-height: 50px;
 }
 
 
