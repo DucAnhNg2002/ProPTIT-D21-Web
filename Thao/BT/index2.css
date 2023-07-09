@@ -27,6 +27,7 @@ body{
     text-align: left;
     display: block;
     line-height: 1.428571429;
+    background: #e8e8e8;
 }
 .off-canvas-pusher{
     width: 100%;
@@ -75,7 +76,7 @@ img{
 
 }
 .container{
-    background-color: #F0F0F0;
+    /*background-color: #F0F0F0;*/
     padding-right: 30px;
     padding-left: 30px;
     margin: auto;
@@ -100,6 +101,12 @@ img{
 @media(min-width:1200px){
     .container{
         width: 1230px;
+    }
+}
+@media(min-width:1280px){
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -314,6 +321,169 @@ img{
     background-size: contain;
     height: 16px;
     width: 16px;
+}
+.no-margin-top{
+    margin-top: 0px;
+}
+.main{
+    margin: 0 auto;
+    min-height: 320px;
+    padding: 0px;
+    text-align: left;
+}
+.container-inner{
+    padding: 5px 0;
+    background: transparent;
+    font-size: 12px;
+    font-family: "Poppins",sans-serif;
+}
+.breadcrumb{
+    background: transparent!important;
+    display: inline-block;
+    padding:0px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 4px;
+}
+.main .container .container-inner{
+    padding: 10px 0;
+    padding-top: 0px;
+}
+@media(min-width:768px){
+    .col-left{
+        width: 100%;
+        float: left;
+    }
+}
+@media(min-width:992px){
+    .col-left{
+        width: 25%;
+    }
+}
+@media(min-width:1200px){
+    .col-left{
+        width: 25%;
+        float: left;
+    }
+}
+.col-left{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+}
+.mb-left .block-content{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.currently{
+    padding: 5px 10px 5px 0;
+    margin-top: -30px;
+}
+dl{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.block-content dl{
+    position: relative;
+    zoom: 1;
+    left: 0;
+    top: 0;
+}
+.block-content dt{
+    position: relative;
+    zoom: 1;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 100%;
+    padding: 10px 0;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.narrow-by-list dd{
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 2px solid #f6f6f6;
+}
+dt,dd{
+    line-height: 1.428571429;
+    display: block;
+    
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ ol li{
+    margin-left: 0px;
+    color: #333;
+    line-height: 22px;
+    margin: 0 0 7px 10px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+#current-category{
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #f7921f;
+    font-family: sans-serif;
+}
+.filter-item{
+    color: #F7941E;
+    font-weight: bold;
+    font-size: 14px;
+}
+.child-category{
+    margin-left: 10px;
+    height: 241px;
+    overflow: hidden;
+    padding-top: 1px;
+}
+ .child-category li{
+    color: #333;
+    line-height: 22px;
+    margin: 0 0 7px 10px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+.child-category li a{
+    color: #666;
+    padding: 0;
+    display: inline;
+}
+.m-more-less{
+    font-size: 11px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m-show-more-action{
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_morong.png) no-repeat right;
+    color: #F7941E;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 20px;
+}
+.css-checkboxes li{
+    padding-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    background: url(https://cdn0.fahasa.com/skin/frontend/base/default/images/manapro_filtercheckboxes/ico_uncheck.png) 0 50% no-repeat;
 }
 
 
