@@ -152,6 +152,11 @@ img{
         width: 100%;
         float: left;
     }
+    .col-md-4{
+        width: 33.33333333333333%;
+        float: left;
+    }
+
   
 }
 @media(min-width:1200px){
@@ -409,15 +414,54 @@ img{
     padding: 10px 0;
     padding-top: 0px;
 }
+@media(max-width:767px){
+    .col-md-4{
+        width: 50%;
+        float: left;
+    }
+}
+@media(max-width:480px){
+    .col-md-4{
+        width: 100%;
+
+    }
+}
+
 @media(min-width:768px){
     .col-left{
         width: 100%;
         float: left;
     }
+    .kb{
+        width:50%;
+        float: left;
+    }
+    .col-md-4{
+        width:50%;
+        float: left;
+    }
+     
+
 }
 @media(min-width:992px){
     .col-left{
         width: 25%;
+    }
+    .address-footer{
+        width: 100%;
+        float:left
+    }
+    .kb{
+        width:50%;
+        float: left;
+    }
+    .col-md-8{
+        width: 66.66666666666666%;
+        float: left;
+    }
+    .col-md-4{
+        width: 33.33333333333333%;
+        float: left;
     }
 }
 @media(min-width:1200px){
@@ -656,7 +700,7 @@ p{
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 10px;
     z-index: 1;
     font-size: 19px;
@@ -674,6 +718,9 @@ p{
 }
 .clearfix{
     margin: 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .clearfix img{
     max-height: 190px;
@@ -813,7 +860,70 @@ p{
 .thao1:hover{
     background: #FCDAB0;
     border-radius: 5px;
+}.thao1>a,.thao>a{
+    color: black;
 }
+.col-md-4,.address-footer,.kb,.col-md-8,.col-md-4{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ma-footer-static .container  .container-inner{
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+}
+.footer-static-title{
+    border-color: gray;
+    color: black;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+.footer-static-title h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.footer-static-content ul li{
+    border-color: gray;
+    color: black;
+}
+.footer-static-content ul li a{
+    line-height: 35px;
+    padding-left: 10px;
+    color: black;
+    font-size: 13px;
+}
+em:before{
+    content: "\f041";
+}
+.kb{
+    width: 50%;
+    float: left;
+}
+.hidden-xs{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+    height: 80px;
+    margin-right: 16px;
+    float: left;
+}
+
+.hidden-xs div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thao div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 
