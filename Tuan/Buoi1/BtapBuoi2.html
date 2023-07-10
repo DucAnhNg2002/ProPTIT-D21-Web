@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="navbar-container">
+        <div  class="navbar">
+            <a href="#">HOME</a>
+            <a href="#BAND">BAND</a>
+            <a href="#TOUR">TOUR</a>
+            <a href="#CONTACT">CONTACT</a>
+            <div class="dropdown">
+                <button class="dropbtn">MORE 
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Merchadise</a>
+                    <a href="#">Extras</a>
+                    <a href="#">Media</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="img-big">
+        <img class="img" src="https://ducanhng2002.github.io/ProPTIT-D21-Web/DucAnh/Buoi2/assets/img/slider/chicago.jpg?fbclid=IwAR2OKUd9EMm37Z2kZHu4I5LrRJO-4iSMLKXOZi7empnoVyHmJdQvbJAb_YM">
+        <div  class="text-overlay">
+            Chicago<br>
+            Thank you, Chicago - A night we won't forget.<br>
+
+        </div>
+    </div>
+    <div id="content">
+        <!-- About section -->
+        <div  id="BAND" class="content-section">
+            <h2 class="section-heading">THE BAND</h2>
+            <p  class="section-sub-heading">We love music</p>
+            <p  class="about-text">
+                We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="members-list">
+                <div class="member-item">
+                    <p class="member-name">Name</p>
+                    <img class="member-img" src="../Web/member1.jpg" alt="anh1">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">Name</p>
+                    <img class="member-img" src="../Web/member1.jpg" alt="anh2">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">Name</p>
+                    <img class="member-img" src="../Web/member1.jpg" alt="anh3">
+                </div>
+                <div class="clear"></div>
+            </div>      
+        </div>
+        <!-- Tour section -->
+        <div id="TOUR" class="tour-section">
+            <div class="content-section">
+                <h2 class="section-heading text-while" >TOUR DATES</h2>
+                <p  class="section-sub-heading text-while">Remember to book your tickets!</p>
+                <ul class="tickets-list">
+                    <li>September <span class="sold-out">Sold out</span></li>
+                    <li>October <span class="sold-out">Sold out</span></li>
+                    <li>November <span class="quantity">3</span></li>
+                </ul>  
+                <div class="row places-list">
+                    <div class="col place-item">
+                        <img src="place1.jpg" alt="New York" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">New York</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="btn">Buy tickets</a>
+                        </div>
+                    </div>
+                    <div class="col place-item">
+                        <img src="place2.jpg" alt="Paris" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Paris</h3>
+                            <p class="place-time">Sat 28 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="btn">Buy tickets</a>
+                        </div>
+                    </div>
+                    <div class="col place-item">
+                        <img src="place3.jpg" alt="San Francisco" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">San Francisco</h3>
+                            <p class="place-time">Sun 29 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="btn">Buy tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <!-- Contact section -->
+        <div id="CONTACT" class="content-section">
+            <h2 class="section-heading">CONTACT</h2>
+            <p  class="section-sub-heading">Fan? Drop a note!</p>
+            <div class="row contact-content">
+                <div class="col col-half contact-info">
+                    <p><i class="fa fa-mouse-pointer"></i>Chicago, US</p>
+                    <p><i class="fa fa-tablet"></i>Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope-o"></i>Email: mail@mail.com</p>
+                </div>
+                <div class="col col-half contact-form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col col-half">
+                                <input type="text" name="" placeholder="Name" required class="form-control">
+                            </div>
+                            <div class="col col-half" >
+                                <input type="email" name="" placeholder="Email" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-8">
+                            <div class="col col-full">
+                                <input type="text" name="" placeholder="Message" required class="form-control">
+                            </div>
+                        </div>
+                        <input class="btn pull-right mt-16" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map-section">
+            <img src="map.jpg" alt="Map">
+        </div>
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-github-alt"></i></a>
+                <a href=""><i class="fa fa-pinterest-p"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://www.w3schools.com/">w3.css</a></p>
+        </div>    
+    </div>
+</body>   
+</html>
