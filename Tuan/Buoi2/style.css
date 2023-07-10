@@ -1,0 +1,292 @@
+.clear{
+    clear: both;
+}
+.text-while{
+    color:#fff !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 46%;
+    padding-right: 5px;
+}
+.col-full{
+    width: 100%;
+}
+.text-center{
+    text-align: center !important;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding:11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+/* Main */
+.navbar-container{
+    position: sticky;
+    top: 0;
+    background-color: #100000;
+  }
+.navbar-container .navbar{
+    overflow: hidden;
+    top: 0;
+}
+  
+.navbar-container .navbar a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-container .dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.navbar-container .dropdown .dropbtn{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar-container .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(242, 239, 239, 0.827);
+}
+.navbar-container .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar-container .dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar-container .dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.navbar-container .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#img-big .text-overlay {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+#img-big .img{
+    width: 100%;
+    height: auto;
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+#content .members-list{
+    margin-top: 48px;
+}
+#content .member-item{
+    float : left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .member-name{
+    front-size: 15px;
+}
+#content  .member-img {
+    width: 153px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.pull-right{
+    float:right !important;
+}
+/* Tour sectoin */
+.tour-section{
+    background-color: #000;
+    padding-top: 32px;
+
+}
+.tickets-list{
+    background-color: #fff;
+    list-style: none;
+    margin-top: 40px;
+}
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+
+}
+.tickets-list .quantity{
+    float:right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    list-style: 24px;
+    background-color: #000;
+    margin-top: -2px;
+    color: #ddd;
+}
+/* Place */
+.places-list{
+    margin-top: 32px;
+}
+.place-item{
+    width: 31.374%; 
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+/* Contact */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+}
+.contact-info i[class*="fa-"] {
+    width: 25px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 25px;
+}
+.contact-form .form-control{
+    padding: 15px;
+    border: 1px solod #ccc;
+    width: 92%;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+/* Map section */
+.map-section img{
+    width: 100%;
+}
+
+/* Footer */
+#footer {
+    padding: 64px 64px;
+    text-align: center;
+}
+#footer .socials-list{
+    font-size: 24px;
+    color:rgba(0, 0, 0, 0.6);
+
+}
+#footer .socials-list a:hover{
+    color:rgba(0, 0, 0, 0.4);   
+}
+
+#footer copyright{
+    margin-top: 15px;
+    color:rgba(0, 0, 0, 0.6);
+}
+#footer copyright a{
+    color:rgba(0, 0, 0, 0.6);
+}
