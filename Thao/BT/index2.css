@@ -70,6 +70,11 @@ img{
     overflow: clip;
 
 }
+.fhs_header_mobile{
+    display: none;
+    background-color: #C92127;
+    height: 93.4px;
+}
 .fhs_header_desktop > .container{
     padding-left: 0!important;
     padding-right: 0!important;
@@ -155,9 +160,7 @@ img{
     .col-md-4{
         width: 33.33333333333333%;
         float: left;
-    }
-
-  
+    } 
 }
 @media(min-width:1200px){
     .container{
@@ -251,6 +254,8 @@ img{
 .button, input{
     width: 100%;
     line-height: 1.42857;
+    background: #fff;
+    color: #545759;
 }
 .button-search{
     position: absolute;
@@ -414,10 +419,30 @@ img{
     padding: 10px 0;
     padding-top: 0px;
 }
+@media(max-width:992px){
+    .fhs_header_mobile{
+        display: block !important;
+    }
+    a .logo{
+        float: none;
+
+    }
+    .fhs_header_desktop{
+        display: none;
+    }
+}
 @media(max-width:767px){
-    .col-md-4{
+    .pt{
         width: 50%;
         float: left;
+    }
+    .hidden-xs{
+        display: none !important;
+    }
+    a .logo{
+        display: inline;
+        margin: 10px 0;
+
     }
 }
 @media(max-width:480px){
@@ -440,7 +465,10 @@ img{
         width:50%;
         float: left;
     }
-     
+    .col-sm-12{
+        width: 100%;
+        float: left;
+    }
 
 }
 @media(min-width:992px){
@@ -461,6 +489,10 @@ img{
     }
     .col-md-4{
         width: 33.33333333333333%;
+        float: left;
+    }
+    .col-sm-12{
+        width: 100%;
         float: left;
     }
 }
@@ -863,7 +895,7 @@ p{
 }.thao1>a,.thao>a{
     color: black;
 }
-.col-md-4,.address-footer,.kb,.col-md-8,.col-md-4{
+.col-md-4,.address-footer,.kb,.col-md-8,.col-md-4,.col-sm-12,.hi{
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -903,6 +935,10 @@ em:before{
     width: 50%;
     float: left;
 }
+.hi{
+    width: 100%;
+    float: left;
+}
 .hidden-xs{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -922,6 +958,74 @@ em:before{
     justify-content: center;
     align-items: center;
 }
+.fhs_header_mobile{
+    display: none;
+    background-color: #C92127;
+    height: 93.4px;
+}
+.fhs_header_mobile .fhs-header-top-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 4px 5px 4px;
+}
+.fhs-header-top-bar>.fhs_center_center{
+    text-align: center;
+    width: 40px;
+}
+.ico_menu_white{
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu_white.svg) no-repeat center center;
+    background-size: contain;
+    height: 34px;
+    width: 34px;
+}
+.fhs-header-top-bar > .search-mobile-header{
+    width: calc(100% - 104px);
+  
+}
+.ves-autosearch{
+    margin-left: 0;
+    min-height: 46px;
+    position: relative;
+}
+.search_box .pull-left{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    float: left;
+}
+.form-search input{
+    height: 33px;
+    border: 1px solid #C92127;
+    font-size: 1.077em;
+}
+.icons-mobile-header{
+    position: relative;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mini_cart_block{
+    padding: 0 3px;
+}
+.icon_cart_white{
+    background: url(https://cdn0.fahasa.com/skin/frontend/base/default/images/ico_shopping_cart_white.svg) no-repeat center center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+.login-customer-icon{
+    width: 30px;
+    height: 35px;
+    background: url(	https://cdn0.fahasa.com/skin/frontend/base/default/images/ico_thongtintk.svg) no-repeat center center;
+    background-size: 20px;
+}
+
+
+
 
 
 
