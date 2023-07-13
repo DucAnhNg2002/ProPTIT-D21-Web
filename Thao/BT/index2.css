@@ -430,6 +430,10 @@ img{
     .fhs_header_desktop{
         display: none;
     }
+    .toolbar-header{
+        background-color: white;
+        height: 40px;
+    }
 }
 @media(max-width:767px){
     .pt{
@@ -1023,21 +1027,4 @@ em:before{
     background: url(	https://cdn0.fahasa.com/skin/frontend/base/default/images/ico_thongtintk.svg) no-repeat center center;
     background-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
