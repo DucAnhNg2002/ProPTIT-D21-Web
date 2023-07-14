@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        display: none;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sidebar-block:focus+.sidebar {
+        display: flex;
+        left: 100px;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="sidebar-block" tabindex="0">Hiển thị thanh side bar</div>
+    <div class="sidebar">Nội dung thanh side bar</div>
+</body>
+
+</html>

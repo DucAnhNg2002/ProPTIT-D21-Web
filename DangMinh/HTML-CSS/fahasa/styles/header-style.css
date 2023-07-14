@@ -1,0 +1,356 @@
+header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    align-self: center;
+}
+
+.fahasa-sale-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F60A1;
+    width: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    width: 1230px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    height: 68px;
+    padding: 0 16px;
+    /* position: relative; */
+}
+
+.nav-wrapper div {
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.logo img {
+    height: 36px;
+}
+
+.menu-icon {
+    padding-left: 36px;
+}
+
+.menu-icon>img {
+    width: 100%;
+
+}
+
+.menu-icon:hover~.dropdown-content,
+.menu-icon:hover~.dropdown-cover,
+.dropdown-content:hover,
+.dropdown-content:hover~.dropdown-cover {
+    display: flex !important;
+}
+
+
+.dropdown-content {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.dropdown-cover {
+    position: absolute;
+    /* align-items: flex-start; */
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: #261E1E none repeat scroll 0% 0%;
+    opacity: 0.5;
+    z-index: 998;
+    width: 200vw;
+    height: calc(200vh + 200px);
+}
+
+.menu-content-wrapper {
+    padding: 24px 12px 16px 12px;
+    background-color: white;
+    text-align: left;
+    color: #212121;
+    width: 1230px;
+    /* display: flex;
+    align-items: flex-start !important; */
+    z-index: 999;
+    align-self: center !important;
+    border-radius: 6px;
+}
+
+.menu-content-wrapper div {
+    align-items: flex-start;
+}
+
+
+
+.list-title {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 12px; */
+    border-right: 1px solid #CDCFD0;
+}
+
+.list-title-heading {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #7A7E7F;
+    text-align: left !important;
+    margin-bottom: 16px;
+    padding: 0 12px;
+}
+
+.vertical-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 12px;
+}
+
+.vertical-menu div {
+    width: 100%;
+}
+
+.title {
+    padding: 16px 12px;
+    cursor: pointer;
+}
+
+.title:hover {
+    background: #F2F4F5 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+}
+
+.title-text {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.menu-content {
+    width: 72%;
+    align-self: flex-start;
+    padding: 0 20px;
+}
+
+.menu-content-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-content-item>div {
+    width: 100%;
+}
+
+.menu-title {
+    display: flex;
+    align-items: center !important;
+    font-size: 1.4em;
+    font-weight: bold;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.menu-title-icon {
+    height: 24px;
+}
+
+.menu-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-gap: 30px;
+    grid-row-gap: 20px;
+}
+
+.menu-grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grid-item-title {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+.grid-item-content {
+    font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #7A7E7F;
+    padding: 8px 0 0 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.grid-item-content:hover {
+    color: #bf9a61;
+    transition: color 0.5s ease;
+}
+
+.grid-item-view-all {
+    padding: 8px 0 0 0;
+    font-size: 0.8em;
+    color: #2489f4;
+
+}
+
+.search-bar-wrapper {
+    padding: 0 20px 0 8px;
+    width: calc(100% - 619px);
+}
+
+.search-bar {
+    display: block;
+    height: 36px;
+    padding: 3px 3px 3px 0px;
+    border: 1px solid #CDCFD0;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.search-area {
+    width: 100%;
+}
+
+.search-area input {
+    padding: 0 0 0 16px;
+}
+
+.search-button {
+    height: 100%;
+    width: 72px;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.search-button img {
+    height: 20px;
+    width: 20px;
+
+    object-fit: contain;
+}
+
+.items-wrapper {
+    padding: 0 20px 0 8px;
+    width: 360px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-flow: column;
+}
+
+.item-text {
+    font-family: 'Poppins', sans-serif;
+    color: #969696;
+}
+
+.language-changer {
+    border: 1px solid #CDCFD0;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.nav-mobile-wrapper {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .nav-wrapper,
+    .fahasa-sale-ad {
+        display: none;
+    }
+
+    /* 
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    } */
+
+    .nav-mobile-wrapper {
+        background-color: #C92127;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 93.4px;
+    }
+
+    .search-bar-mobile-wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    .logo-mobile-icon {
+        max-width: 130px;
+        max-height: 30px;
+        margin-top: 5px;
+    }
+
+    .mobile-search-input-wrapper {
+        width: clamp(100px, 85%, 1000px);
+    }
+
+    .mobile-search-input-wrapper>input {
+        border-radius: 6px;
+        padding: 0 16px;
+        height: 33px;
+    }
+
+    .mobile-menu-icon {
+        height: 34px;
+        width: 34px;
+        margin: 0 8px;
+    }
+
+    .mobile-cart-icon,
+    .mobile-customer-icon {
+        height: 24px;
+        width: 24px;
+        margin: 0 4px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 600px) {}
